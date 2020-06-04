@@ -1,0 +1,1 @@
+Contain all logic for services, include app authentication if is needed

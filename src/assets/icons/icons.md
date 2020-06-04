@@ -1,0 +1,1 @@
+Contain all logic for icons, include app authentication if is needed

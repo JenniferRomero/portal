@@ -1,0 +1,1 @@
+Contain all logic for components, include app authentication if is needed
