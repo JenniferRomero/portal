@@ -1,0 +1,13 @@
+{
+    "error": {
+        "validate_data": {
+            "documentId": {
+                "empty": "El campo cédula es obligatorio",
+                "type": "El tipo de documento no es aceptado",
+                "regex": "El campo cédula no tiene el formato correcto",
+                "length_min": "El campo cédula debe ser mayor a 6 caracteres",
+                "length_max": "El campo cédula debe ser menor a 10 caracteres"
+            }
+        }
+    } 
+}

@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { Keepalive } from '@ng-idle/keepalive';
-import { IdleTimeoutService } from './services/services.index';
+import { TranslateService } from '@ngx-translate/core';
 import { Idle, DEFAULT_INTERRUPTSOURCES } from '@ng-idle/core';
 import { environment as ENV } from '../../src/environments/environment';
+import { IdleTimeoutService, ValidateDataService } from './services/services.index';
 
 @Component({
   selector: 'app-root',
@@ -12,14 +13,30 @@ import { environment as ENV } from '../../src/environments/environment';
 export class AppComponent {
 
   timedOut = false;
+  langs = ['es', 'en'];
   lastPing?: Date = null;
   idleState = 'Not started.';
 
-  constructor(public _idle: Idle, public _keepalive: Keepalive, public _idleTimeoutService: IdleTimeoutService) {
+  constructor(private translate: TranslateService, public _idle: Idle, public _keepalive: Keepalive, public _idleTimeoutService: IdleTimeoutService, public _validateDataService: ValidateDataService) {
     this.idleTimeout();
+
+    if(!_validateDataService.validateId("1312e12032039")){
+      console.log(_validateDataService.getMessageError());
+    }
   }
 
-  ngOnInit() {}
+  ngOnInit(): void {
+    let browserlang = this.translate.getBrowserLang();
+    if (this.langs.indexOf(browserlang) > -1) {
+      this.translate.setDefaultLang(browserlang);
+    } else {
+      this.translate.setDefaultLang('es');
+    }
+  }
+
+  public useLanguage(lang: string): void {
+    this.translate.setDefaultLang(lang);
+  }
 
   idleTimeout() {
     this._idleTimeoutService.stateSession.subscribe(stateSession => {
