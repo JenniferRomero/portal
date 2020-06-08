@@ -11,7 +11,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~9.0.7",
+    "@angular/animations": "^9.0.7",
     "@angular/common": "~9.0.7",
     "@angular/compiler": "~9.0.7",
     "@angular/core": "~9.0.7",
@@ -26,6 +26,8 @@
     "@ngx-translate/http-loader": "^4.0.0",
     "crypto-js": "^4.0.0",
     "eccjs": "^0.3.1",
+    "ngx-logger": "^4.1.9",
+    "ngx-toastr": "^12.1.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
