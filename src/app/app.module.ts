@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgIdleKeepaliveModule } from '@ng-idle/keepalive';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -12,6 +12,12 @@ import { ServicesModule } from './services/services.module';
 
 import { PreloadingStrategyService } from './core/routes/preloading-strategy.service';
 import { AuthTokenProvider } from './core/interceptors/auth-token/auth-token.interceptor';
+
+import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
+import { GlobalErrorHandlerService } from './services/exceptions/global-error-handler.service';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -31,11 +37,20 @@ import { AuthTokenProvider } from './core/interceptors/auth-token/auth-token.int
           useFactory: (createTranslateLoader),
           deps: [HttpClient]
       }
-    })
+    }),
+    LoggerModule.forRoot({
+      // serverLoggingUrl: 'api/logs',
+      level: NgxLoggerLevel.DEBUG,
+      serverLogLevel: NgxLoggerLevel.ERROR
+    }),
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 6000})
   ],
   providers: [
-    //AuthTokenProvider,
-    PreloadingStrategyService
+    // AuthTokenProvider,
+    PreloadingStrategyService,
+    { provide: ErrorHandler, useClass: GlobalErrorHandlerService }
   ],
   bootstrap: [AppComponent]
 })

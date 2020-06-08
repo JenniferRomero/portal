@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { 
+import {
   EncryptionService,
   IdleTimeoutService,
   LocalStorageService,
-  SessionStorageService
+  SessionStorageService,
+  ErrorMessages,
+  ErrorStages,
+  ErrorTypes
 } from './services.index';
 
 @NgModule({
@@ -16,7 +19,10 @@ import {
     EncryptionService,
     IdleTimeoutService,
     LocalStorageService,
-    SessionStorageService
+    SessionStorageService,
+    ErrorMessages,
+    ErrorTypes,
+    ErrorStages
   ],
   declarations: []
 })
