@@ -20,7 +20,11 @@ export class AppComponent {
   constructor(private translate: TranslateService, public _idle: Idle, public _keepalive: Keepalive, public _idleTimeoutService: IdleTimeoutService, public _validateDataService: ValidateDataService) {
     this.idleTimeout();
 
-    if(!_validateDataService.validateId("1312e12032039")){
+    if(!_validateDataService.validateId("1020806419")){
+      console.log(_validateDataService.getMessageError());
+    }
+
+    if(!_validateDataService.validateIdType("CC")){
       console.log(_validateDataService.getMessageError());
     }
   }
