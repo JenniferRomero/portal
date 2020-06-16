@@ -32,6 +32,21 @@ export class ValidateDataService {
     return result;
   }
 
+  public validateIdType(documentType):boolean {
+    let result = false;
+    var type = documentType;
+
+    if(type == null){
+      this.setMessageError("documentType.empty");
+    } else if (type != 'CC') {
+      this.setMessageError("documentType.type");
+    } else {
+      result = true;
+    }
+
+    return result;
+  }
+
   private setMessageError(pathMsg: string){
     let initPath = "error.validate_data";
     this.messageError = this.translate.instant(initPath + "." + pathMsg);
