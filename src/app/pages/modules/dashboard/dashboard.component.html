@@ -1,3 +1,33 @@
-<div class="container m-5">
-    This is all my content in dashboard
+<div class="contenedor">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row logo">
+        <img src="../../../../assets/images/logo.png" alt="">
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <label class="bienvenido">
+            {{bienvenido}}
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <label class="text-welcome" [innerHTML]="textBienvenida"></label>
+        </div>
+      </div>
+
+      <div class="row">
+        <app-id-c-user></app-id-c-user>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <label class="text-help"><u>{{textHelp}}</u></label>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <app-id-c-carousel></app-id-c-carousel>
+    </div>
+  </div>
 </div>
