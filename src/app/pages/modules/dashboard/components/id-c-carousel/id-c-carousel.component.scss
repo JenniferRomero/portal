@@ -5,7 +5,6 @@
   text-align: center;
   padding: 1em 0;
   max-width: 750px;
-  margin: auto;
   background-color: #5A33FF;
   border-radius: 10px;
   margin: 0px 30px;
@@ -28,7 +27,6 @@
 
 #slider label {
 	cursor: pointer;
-  margin: 5px;
 	text-decoration: none;
 }
 
@@ -104,7 +102,7 @@ div.description {
 #controls label {
 	transition: opacity 0.2s ease-out;
 	//display: none;
-	width: 100px;
+	width: 20px;
 	height: 0px;
 	//opacity: 0.4;
 }
@@ -121,6 +119,7 @@ div.description {
 	float: right;
   margin: 30px 10px 0px 0px;
 	height: 50px;
+	width: 100px;
 	//margin: 0 -50px 0 0;
 	display: block;
 }
@@ -133,6 +132,7 @@ div.description {
 	float: left;
   margin: 30px 0px 0px 10px;
 	height: 50px;
+	width: 100px;
 	//margin: 0 0 0 -50px;
 	display: block;
 }
@@ -147,6 +147,7 @@ div.description {
 	display: inline-block;
 	width: 10px;
 	height: 10px;
+  margin: 5px;
 	background-color: rgba(255, 255, 255, 0.30);
 }
 
@@ -157,6 +158,21 @@ div.description {
 	background-color: #FFFFFF;
 }
 
+@media screen and (max-width: 768px) {
+  .carrousel {
+    position: relative;
+    text-align: center;
+    padding: 1em 0;
+    max-width: 750px;
+    background-color: #5A33FF;
+    border-radius: 10px;
+    margin: 0px 0px;
+    h2 {
+      color: #FFFFFF;
+      @include font($fnb, normal, 24px);
+    }
+  }
+}
 /* responsive behaviour of controls */
 /*@media screen and (max-width: 900px) {
 	#slide1:checked ~ #controls label:nth-child(4),
