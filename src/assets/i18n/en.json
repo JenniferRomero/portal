@@ -9,5 +9,31 @@
                 "length_max": "El campo cédula debe ser menor a 10 caracteres"
             }
         }
-    } 
+    },
+    "welcome": {
+      "Bienvenido": "Bienvenido",
+      "texto-bienvenida": "Soy<b>yo</b> te ayudara a finalizar tu proceso con xxxx",
+      "titulo-registro": "¿Ya eres usuario en soyyo?",
+      "texto-registro": "Revisa tu celular, en un momento recibirás una notificación.",
+      "texto-ayuda": "¿Necesitas ayuda?"
+    },
+    "carrusel": {
+        "titulo": "¿No estás registrado?",
+        "slideFirst": {
+          "subtitulo": "Descarga el App",
+          "texto": "Disponible en Google Play para Android y App Store para iOS."
+        },
+        "slideSecond": {
+          "subtitulo": "Inicia el lector de códigos",
+          "texto": "En la pantalla de inicio, ubica el lector de QR en la parte inferior de la pantalla."
+        },
+        "slideThird": {
+          "subtitulo": "Lee el QR",
+          "texto": "Escanea el siguiente código con la cámara, apuntando directamente a la siguiente forma:"
+        },
+        "slideFourth": {
+          "subtitulo": "Llena tus datos y autoriza",
+          "texto": "Llena los datos que te solicitamos. Al finalizar, autoriza a Bancolombia el uso de tus datos."
+        }
+    }
 }
