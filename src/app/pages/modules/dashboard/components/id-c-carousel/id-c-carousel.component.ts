@@ -4,7 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-id-c-carousel',
   templateUrl: './id-c-carousel.component.html',
-  styleUrls: []
+  styleUrls: ['./id-c-carousel.component.scss']
 })
 export class IdCCarouselComponent implements OnInit {
 
