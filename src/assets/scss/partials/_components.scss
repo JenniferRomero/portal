@@ -1,5 +1,5 @@
 .contenedor {
-  margin: 100px 100px 100px 200px;
+  margin: 100px 80px 100px 200px;
 }
 
 .bienvenido {
@@ -44,3 +44,23 @@
   @include font($fnl, normal, 11px);
 }
 
+@media screen and (max-width: 1280px) {
+  .contenedor {
+    margin: 100px 50px 100px 150px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .contenedor {
+    margin: 80px 50px 100px 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contenedor {
+    margin: 70px 30px 80px 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contenedor {
+    margin: 50px 30px 50px 50px;
+  }
+}
