@@ -1,8 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgIdleKeepaliveModule } from '@ng-idle/keepalive';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 
 import { AppComponent } from './app.component';
@@ -19,6 +18,8 @@ import { GlobalErrorHandlerService } from './services/exceptions/global-error-ha
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 
+import { HttpClientTrans, HttpLoaderFactory } from './core/translate/translate.loader';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -34,8 +35,8 @@ import { ToastrModule } from 'ngx-toastr';
       defaultLanguage: 'es',
       loader: {
           provide: TranslateLoader,
-          useFactory: (createTranslateLoader),
-          deps: [HttpClient]
+          useFactory: (HttpLoaderFactory),
+          deps: [HttpClientTrans]
       }
     }),
     LoggerModule.forRoot({
@@ -48,14 +49,12 @@ import { ToastrModule } from 'ngx-toastr';
       timeOut: 6000})
   ],
   providers: [
-    // AuthTokenProvider,
+    AuthTokenProvider,
     PreloadingStrategyService,
-    { provide: ErrorHandler, useClass: GlobalErrorHandlerService }
+    { provide: ErrorHandler, 
+      useClass: GlobalErrorHandlerService 
+    }
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-}

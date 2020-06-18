@@ -6,6 +6,7 @@ import {
   IdleTimeoutService,
   LocalStorageService,
   SessionStorageService,
+  GenerateQrService,
   ErrorMessages,
   ErrorStages,
   ErrorTypes
@@ -16,6 +17,7 @@ import {
     CommonModule
   ],
   providers: [
+    GenerateQrService,
     EncryptionService,
     IdleTimeoutService,
     LocalStorageService,

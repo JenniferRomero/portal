@@ -3,7 +3,7 @@ import { Keepalive } from '@ng-idle/keepalive';
 import { TranslateService } from '@ngx-translate/core';
 import { Idle, DEFAULT_INTERRUPTSOURCES } from '@ng-idle/core';
 import { environment as ENV } from '../../src/environments/environment';
-import { IdleTimeoutService, ValidateDataService } from './services/services.index';
+import { IdleTimeoutService, ValidateDataService, GenerateQrService } from './services/services.index';
 import { HttpClient } from '@angular/common/http';
 import { ErrorMessages, ErrorStages, ErrorTypes } from './services/exceptions/error-options';
 import { LoggingService } from './services/exceptions/logging.service';
@@ -22,7 +22,19 @@ export class AppComponent {
   lastPing?: Date = null;
   idleState = 'Not started.';
 
-  constructor(private translate: TranslateService, public _idle: Idle, public _keepalive: Keepalive, public _idleTimeoutService: IdleTimeoutService, public _validateDataService: ValidateDataService, public _logger: LoggingService, private http: HttpClient, public errorMessages: ErrorMessages, public errorStages: ErrorStages, public errorTypes: ErrorTypes ) {
+  constructor(
+    private translate: TranslateService, 
+    public _idle: Idle, 
+    public _keepalive: Keepalive, 
+    public _generateQrService: GenerateQrService, 
+    public _idleTimeoutService: IdleTimeoutService, 
+    public _validateDataService: ValidateDataService, 
+    public _logger: LoggingService, 
+    private http: HttpClient, 
+    public errorMessages: ErrorMessages, 
+    public errorStages: ErrorStages, 
+    public errorTypes: ErrorTypes ) {
+
     this.idleTimeout();
 
     if(!_validateDataService.validateId("1020806419")){
@@ -42,6 +54,10 @@ export class AppComponent {
     } else {
       this.translate.setDefaultLang('es');
     }
+
+    this._generateQrService.getQRCode().subscribe(resp => {
+      console.log(resp);
+    });
   }
 
   public useLanguage(lang: string): void {
