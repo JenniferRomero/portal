@@ -1,5 +1,14 @@
 .container_dashboard {
-  margin: 60px 80px 0px 200px;
+ margin: 0px 150px;
+ display: flex;
+ height: -webkit-fill-available;
+   /*background: #F1F2F3 url(/assets/images/fondo.png) no-repeat;
+  background-position-y: 37px; */
+}
+.container_base {
+  align-items: center;
+  /*padding: 100px;
+  margin: 60px 80px 0px 200px;*/
 }
 
 .welcome {
@@ -17,7 +26,7 @@
 }
 
 .logo {
-  margin: 76px 0px 45px 0px;
+  margin: 0px 0px 45px 0px;
 }
 
 .user {
@@ -28,6 +37,10 @@
     padding: 24px;
     text-align: center;
   }
+}
+
+.c-user{
+  padding: 0px 10px 0px 0px;
 }
 
 .title-user {
