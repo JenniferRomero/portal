@@ -17,28 +17,27 @@ export class IdCCarouselComponent implements OnInit {
   ngOnInit(): void {
 
     this.titleCarrusel = this.translate.instant('carrusel.title');
-    // console.log(this.translate.instant('carrusel.titulo'));
 
     this.sliders.push(
       {
           imagePath: '../../../../assets/images/carrusel.png',
-          subtitle: this.translate.instant('carrusel.slideFirst.subtitle'),
-          text: this.translate.instant('carrusel.slideFirst.text')
+          subtitle: 'carrusel.slideFirst.subtitle',
+          text: 'carrusel.slideFirst.text'
       },
       {
           imagePath: '../../../../assets/images/carrusel2.png',
-          subtitle: this.translate.instant('carrusel.slideSecond.subtitle'),
-          text: this.translate.instant('carrusel.slideSecond.text')
+          subtitle: 'carrusel.slideSecond.subtitle',
+          text: 'carrusel.slideSecond.text'
       },
       {
           imagePath: '../../../../assets/images/qr.png',
-          subtitle: this.translate.instant('carrusel.slideThird.subtitle'),
-          text: this.translate.instant('carrusel.slideThird.text')
+          subtitle: 'carrusel.slideThird.subtitle',
+          text: 'carrusel.slideThird.text'
       },
       {
           imagePath: '../../../../assets/images/carrusel3.png',
-          subtitle: this.translate.instant('carrusel.slideFourth.subtitle'),
-          text: this.translate.instant('carrusel.slideFourth.text')
+          subtitle: 'carrusel.slideFourth.subtitle',
+          text: 'carrusel.slideFourth.text'
       }
     );
   }

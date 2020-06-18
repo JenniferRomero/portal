@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { IdCCarouselComponent } from './components/id-c-carousel/id-c-carousel.component';
 import { IdCUserComponent } from './components/id-c-user/id-c-user.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { IdCUserComponent } from './components/id-c-user/id-c-user.component';
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    TranslateModule
   ]
 })
 export class DashboardModule { }

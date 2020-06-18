@@ -7,13 +7,13 @@
       <div class="row">
         <div class="col-md-12">
           <label class="welcome">
-           {{welcome}}
+           {{'dashboard.welcome' | translate}}
           </label>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <label class="text-welcome" [innerHTML]="textWelcome"></label>
+          <label class="text-welcome" [innerHTML]="'dashboard.text-welcome' | translate"></label>
         </div>
       </div>
 
@@ -23,7 +23,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <label class="text-help"><u>{{textHelp}}</u></label>
+          <label class="text-help"><u>{{'dashboard.text-help' | translate}}</u></label>
         </div>
       </div>
     </div>
