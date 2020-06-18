@@ -1,15 +1,18 @@
 import { Injectable } from '@angular/core';
-import { JwtHelperService } from '@auth0/angular-jwt';
 import { appConfig } from '../../../configs/app-config';
 import { LocalStorageService } from '../../../services/services.index';
+import { environment as ENV } from '../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class JwtService {
 
-  constructor(private _jwtHelper: JwtHelperService,
-              private _localStorageService: LocalStorageService) { }
+  constructor(private _localStorageService: LocalStorageService) { }
+
+  getAccessToken(){
+    let urlAccessToken = ENV['endpoints']['accessToken'];
+  }
 
   /**
    * This function return the json web token - JWT
@@ -34,21 +37,5 @@ export class JwtService {
    */
   removeJwtLocalStorage():void {
     this._localStorageService.removeItem(appConfig.token_name_jwt);
-  }
-
-  /**
-   * This function return JWT decode
-   * @returns Json - returns the token with its native structure
-   */
-  getDecodeToken(): any /* Must be a data model */ {
-    return this._jwtHelper.decodeToken(this.getJwtLocalStorage());
-  }
-
-  getTokenExpirationDate():Date {
-    return this._jwtHelper.getTokenExpirationDate(this.getJwtLocalStorage());
-  }
-
-  isTokenExpired():boolean {
-    return this._jwtHelper.isTokenExpired(this.getJwtLocalStorage());
   }
 }
