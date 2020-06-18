@@ -11,7 +11,7 @@
         <div class="inner">
           <div class="slide" *ngFor="let slide of sliders">
             <div class="row name">{{slide.subtitle}}</div>
-            <div class="row description">{{slide.text}}</div>
+            <div class="row description" [innerHTML]="slide.text"></div>
             <div class="slide-content">
               <img [src]=slide.imagePath alt="">
             </div>

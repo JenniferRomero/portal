@@ -15,8 +15,8 @@ export class IdCUserComponent implements OnInit {
   constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
-    this.titleUser = this.translate.instant('welcome.titulo-registro');
-    this.textUser = this.translate.instant('welcome.texto-registro');
+    this.titleUser = this.translate.instant('dashboard.title-register');
+    this.textUser = this.translate.instant('dashboard.text-register');
   }
 
 }

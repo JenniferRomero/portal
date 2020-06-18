@@ -1,4 +1,4 @@
-<div class="contenedor">
+<div class="container_dashboard">
   <div class="row">
     <div class="col-md-6">
       <div class="row logo">
@@ -6,18 +6,19 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <label class="bienvenido">
-            {{bienvenido}}
+          <label class="welcome">
+           {{welcome}}
           </label>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <label class="text-welcome" [innerHTML]="textBienvenida"></label>
+          <label class="text-welcome" [innerHTML]="textWelcome"></label>
         </div>
       </div>
 
       <div class="row">
+        <!--Componente Usuario-->
         <app-id-c-user></app-id-c-user>
       </div>
       <div class="row">
@@ -27,6 +28,7 @@
       </div>
     </div>
     <div class="col-md-6">
+      <!--Componente Carrusel-->
       <app-id-c-carousel></app-id-c-carousel>
     </div>
   </div>

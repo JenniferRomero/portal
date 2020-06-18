@@ -1,41 +1,46 @@
-.contenedor {
-  margin: 100px 80px 100px 200px;
+.container_dashboard {
+  margin: 60px 80px 0px 200px;
 }
 
-.bienvenido {
+.welcome {
   height: 57px;
   width: 215px;
   color: #2E2C35;
+  margin: 0px 0px 9px 0px;
   @include font($fnb, normal, 42px);
 }
 
 .text-welcome {
   color: #2E2C35;
+  margin: 0px 0px 38px 0px;
   @include font($fnr, normal, 18px);
 }
 
 .logo {
-  margin: 80px 0px 20px 0px;
+  margin: 76px 0px 45px 0px;
 }
 
 .user {
   background-color: #FFFFFF;
   border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
-  .telefono {
-    padding: 20px 0px;
+  margin: 0px 0px 32px 10px;
+  .tel {
+    padding: 24px;
     text-align: center;
   }
 }
 
 .title-user {
   color: #FFA329;
+  padding: 20px 0px 0px 0px;
+  margin: 0px;
   @include font($fnb, normal, 16px);
 }
 
 .text-user {
   color: #2E2C35;
+  padding: 0px 0px 20px 0px;
+  margin: 0px;
   @include font($fnr, normal, 16px);
 }
 
@@ -45,22 +50,22 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .contenedor {
+  .container_dashboard {
     margin: 100px 50px 100px 150px;
   }
 }
 @media screen and (max-width: 1180px) {
-  .contenedor {
+  .container_dashboard {
     margin: 80px 50px 100px 100px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .contenedor {
+  .container_dashboard {
     margin: 70px 30px 80px 50px;
   }
 }
 @media screen and (max-width: 768px) {
-  .contenedor {
+  .container_dashboard {
     margin: 50px 30px 50px 50px;
   }
 }

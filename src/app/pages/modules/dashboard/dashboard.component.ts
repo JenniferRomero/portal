@@ -8,16 +8,16 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class DashboardComponent implements OnInit {
 
-  bienvenido: string;
-  textBienvenida: any;
+  welcome: string;
+  textWelcome: any;
   textHelp: string;
 
-  constructor(private translate: TranslateService) { }
+  constructor(public translate: TranslateService) { }
 
   ngOnInit() {
-    this.bienvenido = this.translate.instant('welcome.bienvenido');
-    this.textBienvenida = this.translate.instant('welcome.texto-bienvenida');
-    this.textHelp = this.translate.instant('welcome.texto-ayuda');
+    this.welcome = this.translate.instant('dashboard.welcome');
+    this.textWelcome = this.translate.instant('dashboard.text-welcome');
+    this.textHelp = this.translate.instant('dashboard.text-help');
   }
 
 }
