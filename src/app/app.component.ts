@@ -1,13 +1,13 @@
-import { Component, ErrorHandler } from '@angular/core';
 import { Keepalive } from '@ng-idle/keepalive';
+import { HttpClient } from '@angular/common/http';
 import { TranslateService } from '@ngx-translate/core';
+import { Component, ErrorHandler } from '@angular/core';
 import { Idle, DEFAULT_INTERRUPTSOURCES } from '@ng-idle/core';
+import { ErrorGlobal } from './services/exceptions/error-global';
+import { LoggingService } from './services/exceptions/logging.service';
 import { environment as ENV } from '../../src/environments/environment';
 import { IdleTimeoutService, ValidateDataService, GenerateQrService } from './services/services.index';
-import { HttpClient } from '@angular/common/http';
 import { ErrorMessages, ErrorStages, ErrorTypes } from './services/exceptions/error-options';
-import { LoggingService } from './services/exceptions/logging.service';
-import { ErrorGlobal } from './services/exceptions/error-global';
 
 @Component({
   selector: 'app-root',
@@ -23,17 +23,17 @@ export class AppComponent {
   idleState = 'Not started.';
 
   constructor(
-    private translate: TranslateService, 
     public _idle: Idle, 
+    private http: HttpClient, 
     public _keepalive: Keepalive, 
+    public errorTypes: ErrorTypes,
+    public _logger: LoggingService,
+    public errorStages: ErrorStages, 
+    public errorMessages: ErrorMessages, 
+    private translate: TranslateService, 
     public _generateQrService: GenerateQrService, 
     public _idleTimeoutService: IdleTimeoutService, 
-    public _validateDataService: ValidateDataService, 
-    public _logger: LoggingService, 
-    private http: HttpClient, 
-    public errorMessages: ErrorMessages, 
-    public errorStages: ErrorStages, 
-    public errorTypes: ErrorTypes ) {
+    public _validateDataService: ValidateDataService) {
 
     this.idleTimeout();
 
@@ -60,7 +60,7 @@ export class AppComponent {
     });
   }
 
-  public useLanguage(lang: string): void {
+  useLanguage(lang: string): void {
     this.translate.setDefaultLang(lang);
   }
 
