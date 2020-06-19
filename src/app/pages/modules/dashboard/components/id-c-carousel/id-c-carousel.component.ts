@@ -20,22 +20,22 @@ export class IdCCarouselComponent implements OnInit {
 
     this.sliders.push(
       {
-          imagePath: '../../../../assets/images/carrusel.png',
+          imagePath: '../../../../assets/images/carrusel.svg',
           subtitle: 'carrusel.slideFirst.subtitle',
           text: 'carrusel.slideFirst.text'
       },
       {
-          imagePath: '../../../../assets/images/carrusel2.png',
+          imagePath: '../../../../assets/images/carrusel2.svg',
           subtitle: 'carrusel.slideSecond.subtitle',
           text: 'carrusel.slideSecond.text'
       },
       {
-          imagePath: '../../../../assets/images/qr.png',
+          imagePath: '../../../../assets/images/qr.svg',
           subtitle: 'carrusel.slideThird.subtitle',
           text: 'carrusel.slideThird.text'
       },
       {
-          imagePath: '../../../../assets/images/carrusel3.png',
+          imagePath: '../../../../assets/images/carrusel3.svg',
           subtitle: 'carrusel.slideFourth.subtitle',
           text: 'carrusel.slideFourth.text'
       }
