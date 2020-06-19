@@ -201,7 +201,7 @@ div.description {
   }
 }
 
-@media screen and (max-width: 3072px) {
+@media screen and (min-width: 3072px) {
   .carrousel {
     padding: 34px 0 42px 0;
     h2 {
