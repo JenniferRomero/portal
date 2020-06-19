@@ -1,22 +1,18 @@
 .container_dashboard {
-  /*margin: 0px 150px;
-  display: flex;
-  height: -webkit-fill-available;*/
     display: table;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-   /*background: #F1F2F3 url(/assets/images/fondo.png) no-repeat;
-  background-position-y: 37px; */
 }
 .container_base {
   align-items: center;
   display: table-cell;
   vertical-align: middle;
-  /*padding: 100px;
-  margin: 60px 80px 0px 200px;*/
+  background: #F1F2F3 url('/assets/images/fondo.png') no-repeat;
+  background-position-y: 37px;
+  position: relative;
 }
 
 .in-line {
@@ -74,23 +70,69 @@
   @include font($fnl, normal, 11px);
 }
 
+/*safari */
+@media (min-width: 1700px) and (max-width: 3100px){
+  .in-line {
+    margin: 0px 200px;
+  }
+  .img {
+    width: 200px;
+    height: 100px;
+  }
+  .welcome {
+    margin: 0px 0px 25px 0px;
+    @include font($fnb, normal, 52px);
+  }
+  .text-welcome {
+    margin: 0px 0px 48px 0px;
+    @include font($fnr, normal, 23px);
+  }
+  .img_telephone {
+    width: 70px;
+    height: 70px;
+  }
+  .title-user {
+    @include font($fnb, normal, 23px);
+  }
+  .text-user {
+    @include font($fnr, normal, 18px);
+  }
+  .text-help {
+    @include font($fnl, normal, 18px);
+  }
+}
+/*otros*/
 @media screen and (max-width: 1280px) {
-  .container_dashboard {
-    margin: 100px 50px 100px 150px;
+  .in-line {
+    margin: 0px 130px;
   }
 }
 @media screen and (max-width: 1180px) {
-  .container_dashboard {
-    margin: 80px 50px 100px 100px;
+  .in-line {
+    margin: 0px 110px;
   }
 }
-@media screen and (max-width: 1024px) {
-  .container_dashboard {
-    margin: 70px 30px 80px 50px;
+@media screen and (max-width: 1090px) {
+  .in-line {
+    margin: 0px 80px;
+  }
+  .c-user {
+    padding: 0px 10px 0px 10px;
+  }
+}
+@media screen and (max-width: 987px) {
+  .in-line {
+    margin: 0px 40px;
+  }
+}
+@media screen and (max-width: 967px) {
+  .in-line {
+    margin: 0px 0px;
   }
 }
 @media screen and (max-width: 768px) {
   .container_dashboard {
-    margin: 50px 30px 50px 50px;
+    position: absolute;
   }
 }
+
