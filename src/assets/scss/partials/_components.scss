@@ -94,3 +94,53 @@
     margin: 50px 30px 50px 50px;
   }
 }
+
+@media screen and (max-width: 3072px) {
+  .in-line {
+    margin: 0px 200px;
+  }
+  .img {
+    width: 200px;
+    height: 100px;
+  }
+  .welcome {
+    margin: 0px 0px 25px 0px;
+    @include font($fnb, normal, 52px);
+  }
+  .text-welcome {
+    margin: 0px 0px 48px 0px;
+    @include font($fnr, normal, 23px);
+  }
+  .img_telephone {
+    width: 70px;
+    height: 70px;
+  }
+  .title-user {
+    @include font($fnb, normal, 23px);
+  }
+  .text-user {
+    @include font($fnr, normal, 18px);
+  }
+  .text-help {
+    @include font($fnl, normal, 18px);
+  }
+}
+/*.logo {
+  margin: 40px 0px 45px 0px;
+  background-image: url("/assets/images/logo.png");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 100px;
+}
+.img {
+  width: 300px;
+  height: 100px;
+}
+
+.container_dashboard {
+  margin: 100px 20px 50px 50px;
+}
+#slider {
+  width: 5000px
+}*/
+
