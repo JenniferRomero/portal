@@ -48,7 +48,7 @@ div.name {
 div.description {
   color: #FFFFFF;
   justify-content: center;
-  padding: 9px 60px 32px 60px;
+  padding: 9px 30px 32px 30px;
   margin: 0px;
   @include font($fnr, normal, 16px);
 }
@@ -106,28 +106,35 @@ div.description {
 	//display: none;
 	width: 20px;
 	height: 0px;
+	opacity: 1;
 	//opacity: 0.4;
 }
 #controls label:hover {
-	//opacity: 1;
+	opacity: 1;
 }
 
 #slide1:checked ~ #controls label:nth-child(2),
 #slide2:checked ~ #controls label:nth-child(3),
-#slide3:checked ~ #controls label:nth-child(4),
-#slide4:checked ~ #controls label:nth-child(1) {
+#slide3:checked ~ #controls label:nth-child(4) {
   background: url('/../../assets/images/siguiente.png') no-repeat;
-  // background-repeat: no-repeat;
 	float: right;
   margin: 35px 40px 0px 0px;
 	height: 50px;
   width: 100px;
   padding: 0px;
-	//margin: 0 -50px 0 0;
 	display: block;
 }
 
-#slide1:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(4) {
+  background: url('/../../assets/images/siguiente_gris.png') no-repeat;
+	float: right;
+  margin: 35px 40px 0px 0px;
+	height: 50px;
+  width: 100px;
+  padding: 0px;
+	display: block;
+}
+
 #slide2:checked ~ #controls label:nth-child(1),
 #slide3:checked ~ #controls label:nth-child(2),
 #slide4:checked ~ #controls label:nth-child(3) {
@@ -137,7 +144,16 @@ div.description {
 	height: 50px;
 	width: 100px;
   padding: 0px;
-	//margin: 0 0 0 -50px;
+	display: block;
+}
+
+#slide1:checked ~ #controls label:nth-child(1) {
+	background: url("/../../assets/images/anterior_gris.png") no-repeat;
+	float: left;
+  margin: 35px 0px 0px 40px;
+	height: 50px;
+	width: 100px;
+  padding: 0px;
 	display: block;
 }
 
