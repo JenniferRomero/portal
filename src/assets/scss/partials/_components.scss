@@ -1,14 +1,26 @@
 .container_dashboard {
- margin: 0px 150px;
- display: flex;
- height: -webkit-fill-available;
+  /*margin: 0px 150px;
+  display: flex;
+  height: -webkit-fill-available;*/
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
    /*background: #F1F2F3 url(/assets/images/fondo.png) no-repeat;
   background-position-y: 37px; */
 }
 .container_base {
   align-items: center;
+  display: table-cell;
+  vertical-align: middle;
   /*padding: 100px;
   margin: 60px 80px 0px 200px;*/
+}
+
+.in-line {
+  margin: 0px 150px;
 }
 
 .welcome {
@@ -26,7 +38,7 @@
 }
 
 .logo {
-  margin: 0px 0px 45px 0px;
+  margin: 40px 0px 45px 0px;
 }
 
 .user {
