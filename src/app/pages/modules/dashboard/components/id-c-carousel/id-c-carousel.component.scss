@@ -12,14 +12,13 @@
   h2 {
     color: #FFFFFF;
     margin: 0px !important;
-    padding: 0px 101px;
+    padding: 0px 20px;
     @include font($fnb, normal, 24px);
   }
 }
 
 #slider {
   margin: 0 auto;
-  width: 800px;
   max-width: 100%;
   text-align: center;
 }
@@ -120,7 +119,7 @@ div.description {
 #slide1:checked ~ #controls label:nth-child(2),
 #slide2:checked ~ #controls label:nth-child(3),
 #slide3:checked ~ #controls label:nth-child(4) {
-  background: url('/../../assets/images/siguiente.svg') no-repeat;
+  background: url('/../../assets/images/siguiente.png') no-repeat;
   float: right;
   margin: 35px 40px 0px 0px;
   height: 50px;
@@ -130,7 +129,7 @@ div.description {
 }
 
 #slide4:checked ~ #controls label:nth-child(4) {
-  background: url('/../../assets/images/siguiente_gris.svg') no-repeat;
+  background: url('/../../assets/images/siguiente_gris.png') no-repeat;
   float: right;
   margin: 35px 40px 0px 0px;
   height: 50px;
@@ -142,7 +141,7 @@ div.description {
 #slide2:checked ~ #controls label:nth-child(1),
 #slide3:checked ~ #controls label:nth-child(2),
 #slide4:checked ~ #controls label:nth-child(3) {
-  background: url("/../../assets/images/anterior.svg") no-repeat;
+  background: url("/../../assets/images/anterior.png") no-repeat;
   float: left;
   margin: 35px 0px 0px 40px;
   height: 50px;
@@ -152,7 +151,7 @@ div.description {
 }
 
 #slide1:checked ~ #controls label:nth-child(1) {
-  background: url("/../../assets/images/anterior_gris.svg") no-repeat;
+  background: url("/../../assets/images/anterior_gris.png") no-repeat;
   float: left;
   margin: 35px 0px 0px 40px;
   height: 50px;
@@ -201,7 +200,8 @@ div.description {
   }
 }
 
-@media (min-width: 1792px) and (max-width: 3100px){
+/*safari*/
+@media (min-width: 1700px) and (max-width: 3100px){
   .carrousel {
     padding: 34px 0 42px 0;
     h2 {
@@ -225,20 +225,20 @@ div.description {
   }
 }
 
-/* responsive behaviour of controls */
-/*@media screen and (max-width: 900px) {
-	#slide1:checked ~ #controls label:nth-child(4),
-	#slide2:checked ~ #controls label:nth-child(1),
-	#slide3:checked ~ #controls label:nth-child(2),
-	#slide4:checked ~ #controls label:nth-child(3){
-		margin: 0;
-	}
+/*otros*/
+@media screen and (max-width: 1280px) {
+  .carrousel {
+    margin: 0px 15px;
+  }
+}
+@media screen and (max-width: 967px) {
+  .carrousel {
+    margin: 0px 0px;
+  }
+}
 
-	#slide1:checked ~ #controls label:nth-child(2),
-	#slide2:checked ~ #controls label:nth-child(3),
-	#slide3:checked ~ #controls label:nth-child(4),
-	#slide4:checked ~ #controls label:nth-child(1){
-		margin: 0;
-	}
-}*/
-/* end of responsive behaviour of controls */
+@media screen and (max-width: 768px) {
+  .carrousel {
+    margin: 0px 0px;
+  }
+}
