@@ -1,14 +1,14 @@
 export class RoutingPath {
     public static appRouting = {
-        auth: {
+        transaction: {
             pages: {
-                login: {
-                    path: 'login',
+                validate: {
+                    path: ':idTx/:userState/:idEntity',
                     breadcrumb: 'Inicio de sesión'
                 },
-                register: {
-                    path: 'register',
-                    breadcrumb: 'Registrarse'
+                error: {
+                    path: 'error',
+                    breadcrumb: 'Error al validar Token'
                 }
             }
         },

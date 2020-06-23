@@ -4,15 +4,15 @@ import { TransactionComponent } from './transaction.component';
 import { TransactionRoutingModule } from './transaction-routing.module';
 
 import {
-  LoginComponent,
-  RegisterComponent
+  ValidateComponent,
+  ErrorComponent
 } from './pages/pages.index';
 
 @NgModule({
   declarations: [
     TransactionComponent,
-    LoginComponent,
-    RegisterComponent
+    ValidateComponent,
+    ErrorComponent
   ],
   imports: [
     CommonModule,

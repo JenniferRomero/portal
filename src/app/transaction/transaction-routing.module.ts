@@ -3,7 +3,7 @@ import { RoutingPath } from '../configs/routing-path';
 import { Routes, RouterModule } from '@angular/router';
 
 import { TransactionComponent } from './transaction.component';
-import { LoginComponent, RegisterComponent } from './pages/pages.index';
+import { ValidateComponent, ErrorComponent } from './pages/pages.index';
 
 const routes: Routes = [
   {
@@ -12,21 +12,21 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: RoutingPath.appRouting.auth.pages.login.path,
+        redirectTo: RoutingPath.appRouting.transaction.pages.error.path,
         pathMatch: 'full'
       },
       {
-        path: RoutingPath.appRouting.auth.pages.login.path,
-        component: LoginComponent,
+        path: RoutingPath.appRouting.transaction.pages.validate.path,
+        component: ValidateComponent,
         data: {
-          breadcrumb: RoutingPath.appRouting.auth.pages.login.breadcrumb
+          breadcrumb: RoutingPath.appRouting.transaction.pages.validate.breadcrumb
         }
       },
       {
-        path: RoutingPath.appRouting.auth.pages.register.path,
-        component: RegisterComponent,
+        path: RoutingPath.appRouting.transaction.pages.error.path,
+        component: ErrorComponent,
         data: {
-          breadcrumb: RoutingPath.appRouting.auth.pages.register.breadcrumb
+          breadcrumb: RoutingPath.appRouting.transaction.pages.error.breadcrumb
         }
       }
     ]
