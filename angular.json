@@ -69,6 +69,14 @@
                   "with": "src/environments/environment.dev.ts"
                 }
               ]
+            },
+            "qa": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.qa.ts"
+                }
+              ]
             }
           }
         },
@@ -83,6 +91,9 @@
             },
             "dev": {
               "browserTarget": "front:build:dev"
+            },
+            "qa": {
+              "browserTarget": "front:build:qa"
             }
           }
         },
