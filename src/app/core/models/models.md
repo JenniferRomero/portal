@@ -1,1 +1,0 @@
-Contain all logic for models, include app authentication if is needed

@@ -16,18 +16,28 @@ import {
 @Injectable()
 export class AuthTokenInterceptor implements HttpInterceptor {
 
-  constructor(private _jwtService: JwtService) { }
+  constructor(private _jwtService: JwtService) {
+    
+  }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
-    const headers = new HttpHeaders({
-      'access-token': this._jwtService.getJwtLocalStorage()
+    if (req.headers.get("Skip")){
+      return next.handle(req);
+    }
+
+    this._jwtService.getAccessToken().subscribe(data => {
+      let accessToken = data['access_token'];
+  
+      const headers = new HttpHeaders({
+        'access-token': accessToken
+      });
+  
+      const reqClone = req.clone({ headers });
+  
+      //return next.handle(reqClone).pipe(catchError(this.manageError));
+      return next.handle(req);
     });
-
-    const reqClone = req.clone({ headers });
-
-    //return next.handle(reqClone).pipe(catchError(this.manageError));
-    return next.handle(req);
   }
 
   manageError(error: HttpErrorResponse) {

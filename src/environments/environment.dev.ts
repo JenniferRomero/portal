@@ -1,16 +1,14 @@
 export const environment = {
 	production: false,
-	endpoints: {},
+	endpoints: {
+		accessToken: "https://soyyodev.auth.us-east-1.amazoncognito.com/oauth2/token"
+	},
 	keys: {
-        backend_keys: {
-        	masterDecrypt: "1922ce7ac7c1cab3bfe4e86ad9569c88640668d0d32cb61cbd3",
-            masterEncrypt: "192db662d8f28cca3d53afc509bae5a759dd4eaa797ef1b23c94a0f8be714b009ac463b687caecbcc2b00f985583dd45933"
-        },
-		apiKey: "b8roVckVWh3x96fg09Tp079m66vDBg4G2hBAvuyV"
+		username: "i9k7m3o570i15p3v4a678s79e",
+		password: "ftovorpv8k4knllnlbjchqq2rau2gif7qhdtagqjdu0k033rcl2",
+		apiKey: "bYEHYDL5dU1HrkKjlgkzN5SJVwJmFSHP9kdBAl2B"
 	},
 	time: {
-		//timeSessionIdToken: 10,
-        //timeSessionRefreshToken: 20,
         timeSession: 300,
 	}
 }
