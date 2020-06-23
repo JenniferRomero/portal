@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TransactionComponent } from './transaction.component';
-import { TransactionRoutingModule } from './transaction-routing.module';
+import { ValidateTokenComponent } from './validate-token.component';
+import { TransactionRoutingModule } from './validate-token-routing.module';
 
 import {
   ValidateComponent,
@@ -10,7 +10,7 @@ import {
 
 @NgModule({
   declarations: [
-    TransactionComponent,
+    ValidateTokenComponent,
     ValidateComponent,
     ErrorComponent
   ],
@@ -19,4 +19,4 @@ import {
     TransactionRoutingModule
   ]
 })
-export class TransactionModule { }
+export class ValidateTokenModule { }

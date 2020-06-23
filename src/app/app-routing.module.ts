@@ -15,8 +15,8 @@ const appRoutes: Routes = [
     data: { preload: false }
   },
   {
-    path: 'transaction',
-    loadChildren: () => import('./transaction/transaction.module').then(m => m.TransactionModule),
+    path: 'validate-token',
+    loadChildren: () => import('./validate-token/validate-token.module').then(m => m.ValidateTokenModule),
   },
   {
     path: '**',

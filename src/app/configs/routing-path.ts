@@ -3,7 +3,7 @@ export class RoutingPath {
         transaction: {
             pages: {
                 validate: {
-                    path: ':idTx/:userState/:idEntity',
+                    path: ':idProcess/:identificationNumber/:token',
                     breadcrumb: 'Inicio de sesión'
                 },
                 error: {

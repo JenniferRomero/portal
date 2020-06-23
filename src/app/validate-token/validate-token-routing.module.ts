@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { RoutingPath } from '../configs/routing-path';
 import { Routes, RouterModule } from '@angular/router';
 
-import { TransactionComponent } from './transaction.component';
+import { ValidateTokenComponent } from './validate-token.component';
 import { ValidateComponent, ErrorComponent } from './pages/pages.index';
 
 const routes: Routes = [
   {
     path: '',
-    component: TransactionComponent,
+    component: ValidateTokenComponent,
     children: [
       {
         path: '',
