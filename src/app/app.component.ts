@@ -55,9 +55,9 @@ export class AppComponent {
       this.translate.setDefaultLang('es');
     }
 
-    this._generateQrService.getQRCode().subscribe(resp => {
+    /*this._generateQrService.getQRCode().subscribe(resp => {
       console.log(resp);
-    });
+    });*/
   }
 
   useLanguage(lang: string): void {

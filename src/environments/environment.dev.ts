@@ -1,7 +1,8 @@
 export const environment = {
 	production: false,
 	endpoints: {
-		accessToken: "https://soyyodev.auth.us-east-1.amazoncognito.com/oauth2/token"
+		accessToken: "https://soyyodev.auth.us-east-1.amazoncognito.com/oauth2/token",
+		validateToken: ""
 	},
 	keys: {
 		username: "i9k7m3o570i15p3v4a678s79e",

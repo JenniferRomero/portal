@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
+import { from as fromPromise } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
 import { JwtService } from '../../http/jwt/jwt.service';
+import { environment as ENV } from '../../../../environments/environment';
 
 import { 
   HttpEvent,
@@ -16,9 +18,9 @@ import {
 @Injectable()
 export class AuthTokenInterceptor implements HttpInterceptor {
 
-  constructor(private _jwtService: JwtService) {
-    
-  }
+  accessToken = null;
+
+  constructor(private _jwtService: JwtService) { }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
@@ -26,17 +28,34 @@ export class AuthTokenInterceptor implements HttpInterceptor {
       return next.handle(req);
     }
 
-    this._jwtService.getAccessToken().subscribe(data => {
-      let accessToken = data['access_token'];
-  
-      const headers = new HttpHeaders({
-        'access-token': accessToken
+    return fromPromise(this.handleAccess(req, next));
+  }
+
+  private async handleAccess(req: HttpRequest<any>, next: HttpHandler){
+
+    let request = req;
+    let api_key = ENV['keys']['apiKey'];
+    let accessToken = await this.getAccessToken();
+
+    const headers = new HttpHeaders({
+      "x-api-key": api_key,
+      "Autentication": "Bearer " + accessToken
+    });
+    
+    request = req.clone({headers});
+
+    console.log(request);
+
+    return next.handle(request).toPromise();
+  }
+
+  getAccessToken(){
+    return new Promise((resolve) => {
+      this._jwtService.getAccessToken().subscribe(data => {
+        if(data['access_token']){
+          resolve(data['access_token']);
+        }
       });
-  
-      const reqClone = req.clone({ headers });
-  
-      //return next.handle(reqClone).pipe(catchError(this.manageError));
-      return next.handle(req);
     });
   }
 
