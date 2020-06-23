@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthComponent } from './auth.component';
-import { AuthRoutingModule } from './auth-routing.module';
+import { TransactionComponent } from './transaction.component';
+import { TransactionRoutingModule } from './transaction-routing.module';
 
 import {
   LoginComponent,
@@ -10,13 +10,13 @@ import {
 
 @NgModule({
   declarations: [
-    AuthComponent,
+    TransactionComponent,
     LoginComponent,
     RegisterComponent
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    TransactionRoutingModule
   ]
 })
-export class AuthModule { }
+export class TransactionModule { }

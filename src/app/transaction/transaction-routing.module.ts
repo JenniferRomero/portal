@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { RoutingPath } from '../configs/routing-path';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AuthComponent } from './auth.component';
+import { TransactionComponent } from './transaction.component';
 import { LoginComponent, RegisterComponent } from './pages/pages.index';
 
 const routes: Routes = [
   {
     path: '',
-    component: AuthComponent,
+    component: TransactionComponent,
     children: [
       {
         path: '',
@@ -37,4 +37,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AuthRoutingModule { }
+export class TransactionRoutingModule { }

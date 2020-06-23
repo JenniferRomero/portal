@@ -15,8 +15,8 @@ const appRoutes: Routes = [
     data: { preload: false }
   },
   {
-    path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule),
+    path: 'transaction',
+    loadChildren: () => import('./transaction/transaction.module').then(m => m.TransactionModule),
   },
   {
     path: '**',
