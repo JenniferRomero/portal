@@ -15,16 +15,28 @@
         </div>
         <div class="col-7 col-md-8">
             <div class="loading" *ngIf="isLoading">
-                <p class="description">Estamos validando, solo tomará unos segundos...</p>
+                <p class="description">
+                    {{ 'validate-token.state.loading.description' | translate }}
+                </p>
             </div>
             <div class="success" *ngIf="isSuccess">
-                <p class="title">Revisa tu teléfono</p>
-                <p class="description">Pronto enviaremos una notificación de respuesta a tu teléfono.</p>
-                <p class="end">Ya puedes cerrar esta pestaña.</p>
+                <p class="title">
+                    {{ 'validate-token.state.success.title' | translate }}
+                </p>
+                <p class="description">
+                    {{ 'validate-token.state.success.description' | translate }}
+                </p>
+                <p class="end">
+                    {{ 'validate-token.state.success.end' | translate }}
+                </p>
             </div>
             <div class="error" *ngIf="isError">
-                <p class="title">Tu verificación a expirado</p>
-                <p class="description">Pero no te preocupes, ingresa a soyyo App e inténtalo de nuevo.</p>
+                <p class="title">
+                    {{ 'validate-token.state.error.title' | translate }}
+                </p>
+                <p class="description">
+                    {{ 'validate-token.state.error.description' | translate }}
+                </p>
             </div>
         </div>
     </div>
