@@ -9,11 +9,39 @@
     <div id="slides">
       <div id="overflow">
         <div class="inner">
-          <div class="slide" *ngFor="let slide of sliders">
+          <!--<div class="slide" *ngFor="let slide of sliders">
             <div class="row name">{{slide.subtitle | translate}}</div>
             <div class="row description" [innerHTML]="slide.text | translate"></div>
             <div class="slide-content">
               <img class="img_slider" [src]=slide.imagePath alt="">
+            </div>
+          </div>-->
+          <div class="slide">
+            <div class="row name">{{subtitleFirst | translate}}</div>
+            <div class="row description" [innerHTML]="textFirst | translate"></div>
+            <div class="slide-content">
+              <img class="img_slider" [src]=imagePathFirst alt="">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="row name">{{subtitleSecond | translate}}</div>
+            <div class="row description" [innerHTML]="textSecond | translate"></div>
+            <div class="slide-content">
+              <img class="img_slider" [src]=imagePathSecond alt="">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="row name">{{subtitleThird | translate}}</div>
+            <div class="row description" [innerHTML]="textThird | translate"></div>
+            <div class="slide-content">
+              <img class="img_slider codqr" [src]=imagePathThird alt="">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="row name">{{subtitleFourth | translate}}</div>
+            <div class="row description" [innerHTML]="textFourth | translate"></div>
+            <div class="slide-content">
+              <img class="img_slider" [src]=imagePathFourth alt="">
             </div>
           </div>
         </div>
