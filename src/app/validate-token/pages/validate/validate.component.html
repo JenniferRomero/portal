@@ -5,8 +5,15 @@
                 <img src="assets/images/woman.svg">
             </div>
             <div class="col col-12 col-md-6 zi-1 order-md-2 order-1">
-                <p class="title">Estamos validando tu correo electrónico</p>
-                <p class="subtitle">Recuerda esta validación tiene <span>vigencia de 10 minutos.</span></p>
+                <p class="title">
+                    {{ 'validate-token.pages.validate.title' | translate }}
+                </p>
+                <p class="subtitle">
+                    {{ 'validate-token.pages.validate.subtitle.text' | translate }}
+                    <span>
+                        {{ 'validate-token.pages.validate.subtitle.span' | translate }}
+                    </span>
+                </p>
                 
                 <!-- State Component -->
                 <app-id-c-vt-state [state]="stateProcess"></app-id-c-vt-state>
