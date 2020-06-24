@@ -1,0 +1,73 @@
+@import '../../../../assets/scss/partials/var_mixins';
+
+.card {
+    z-index: 1;
+    border-color: #fff;
+    border-radius: 13px;
+}
+.card-body {
+    padding: 5%;
+}
+.circle {
+    width: 59px;
+    height: 59px;
+    padding: 15px;
+    margin-bottom: 0;
+    border-radius: 50%;
+    text-align: center;
+    background: #FFA329;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.circle-loader {
+    padding: 13px;
+}
+.circle-error {
+    background: #FF7171;
+}
+.loading {
+    .description {
+        color: #2E2C35;
+        @include font($fnr, normal, 16px);
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+}
+.success {
+    color: #2E2C35;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    line-height: 20px;
+
+    .title {
+        color: #FFA329;
+        @include font($fnb, bold, 16px);
+        line-height: 24px;
+    }
+    .description {
+        @include font($fnr, normal, 16px);
+        letter-spacing: 0;
+    }
+    .end {
+        color: #2E2C35;
+        @include font($fnb, bold, 16px);
+        line-height: 20px;
+    }
+}
+.error {
+    color: #2E2C35;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    line-height: 20px;
+
+    .title {
+        color: #FF7171;
+        @include font($fnb, bold, 16px);
+        line-height: 24px;
+    }
+    .description {
+        @include font($fnr, normal, 16px);
+        letter-spacing: 0;
+    }
+}

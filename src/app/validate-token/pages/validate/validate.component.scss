@@ -1,0 +1,67 @@
+@import '../../../../assets/scss/partials/var_mixins';
+
+.woman-img {
+    margin-top: 8%;
+}
+.title {
+    margin-top: 20%;
+    letter-spacing: 0;
+    line-height: 50px;
+    color: rgba(0, 0, 0, 0.85);
+    @include font($fnb, bold, 42px);
+}
+.subtitle {
+    @include font($fnr, normal, 24px);
+    letter-spacing: 0;
+    line-height: 34px;
+
+    span {
+        color: #5A33FF;
+    }
+}
+.zi-1 {
+    z-index: 1;
+}
+@media (min-width: 1050px) and (max-width: 1380px) {
+    .woman-img {
+        margin-top: 3%;
+        padding-left: 5%;
+
+        img {
+            width: 80%;
+        }
+    }
+    .title {
+        margin-top: 10%;
+        font-size: 38px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .woman-img {
+        z-index: -1;
+        
+        img {
+            width: 100%;
+        }
+    }
+    .title {
+        margin-top: 15%;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: 32px;
+        color: rgba(0,0,0,0.85);
+        @include font($fnb, bold, 24px);
+    }
+    .subtitle {
+        line-height: 24px;
+        letter-spacing: 0;
+        @include font($fnr, normal, 16px);
+
+        span {
+            color: #5A33FF;
+        }
+    }
+}

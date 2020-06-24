@@ -1,0 +1,25 @@
+.navbar {
+    padding: 0;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.11);
+}
+.navbar-white {
+    background-color: #fff;
+}
+img {
+    margin-left: 52px;
+    padding: 17px 0px 17px 0px;
+}
+
+@media (max-width: 576px) {
+    .navbar, .navbar a {
+        margin: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+    img {
+        width: 65%;
+        margin: 0px;
+    }
+}

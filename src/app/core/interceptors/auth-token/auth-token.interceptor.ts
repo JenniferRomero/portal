@@ -44,8 +44,6 @@ export class AuthTokenInterceptor implements HttpInterceptor {
     
     request = req.clone({headers});
 
-    console.log(request);
-
     return next.handle(request).toPromise();
   }
 

@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="row card-body align-items-center">
+        <div class="col-3 col-md-2 align-center">
+            <div class="circle circle-loader" *ngIf="isLoading">
+                <div class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <div class="circle" *ngIf="isSuccess">
+                <img src="assets/images/smartphone-alert-icon.svg">
+            </div>
+            <div class="circle circle-error" *ngIf="isError">
+                <img src="assets/images/exclamation-alert-icon.svg">
+            </div>
+        </div>
+        <div class="col-7 col-md-8">
+            <div class="loading" *ngIf="isLoading">
+                <p class="description">Estamos validando, solo tomará unos segundos...</p>
+            </div>
+            <div class="success" *ngIf="isSuccess">
+                <p class="title">Revisa tu teléfono</p>
+                <p class="description">Pronto enviaremos una notificación de respuesta a tu teléfono.</p>
+                <p class="end">Ya puedes cerrar esta pestaña.</p>
+            </div>
+            <div class="error" *ngIf="isError">
+                <p class="title">Tu verificación a expirado</p>
+                <p class="description">Pero no te preocupes, ingresa a soyyo App e inténtalo de nuevo.</p>
+            </div>
+        </div>
+    </div>
+</div>
