@@ -7,9 +7,9 @@ footer {
     img {
         right: 0;
         bottom: 0;
-        height: 490px;
-        width: 90%;
-        position: absolute;
+        height: 460px;
+        width: 83%;
+        position: fixed;
     }
 
     .title-footer {
@@ -30,6 +30,50 @@ footer {
             margin-right: 3%;
             text-decoration: underline;
             @include font($fnr, normal, 14px);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        overflow: hidden;
+        margin-top: -38%;
+
+        img {
+            width: auto;
+            height: 360px;
+            position: initial;
+        }
+        .title-footer {
+            position: relative;
+            margin-top: -50%;
+
+            .doubts {
+                margin-bottom: 6%;
+            }
+
+            .options a {
+                display: block;
+                padding-bottom: 5%;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1050px) and (max-width: 1280px) {
+    footer {
+        img {
+            height: 330px;
+            width: 90%;
+            bottom: -25px;
         }
     }
 }
