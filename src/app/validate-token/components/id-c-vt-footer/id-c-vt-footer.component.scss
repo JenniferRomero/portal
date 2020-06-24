@@ -1,0 +1,35 @@
+@import '../../../../assets/scss/partials/var_mixins';
+
+footer {
+    width: 100%;
+    text-align: center;
+
+    img {
+        right: 0;
+        bottom: 0;
+        height: 490px;
+        width: 90%;
+        position: absolute;
+    }
+
+    .title-footer {
+        color: #5A33FF;
+        letter-spacing: 0;
+        line-height: 22px;
+        float: right;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        margin-bottom: 4%;
+
+        .doubts {
+            @include font($fnb, bold, 14px);
+        }
+        .options a {
+            color: #5A33FF;
+            margin-right: 3%;
+            text-decoration: underline;
+            @include font($fnr, normal, 14px);
+        }
+    }
+}

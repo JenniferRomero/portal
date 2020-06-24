@@ -1,0 +1,21 @@
+@import '../../../../assets/scss/partials/var_mixins';
+
+.woman-img {
+    margin-top: 5%;
+}
+.title {
+    color: rgba(0, 0, 0, 0.85);
+    @include font($fnb, bold, 42px);
+    letter-spacing: 0;
+    line-height: 50px;
+    margin-top: 20%;
+}
+.subtitle {
+    @include font($fnr, normal, 24px);
+    letter-spacing: 0;
+    line-height: 34px;
+
+    span {
+        color: #5A33FF;
+    }
+}

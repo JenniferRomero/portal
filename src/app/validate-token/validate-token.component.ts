@@ -3,12 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-validate-token',
   templateUrl: './validate-token.component.html',
-  styles: []
+  styleUrls: ['./validate-token.component.scss']
 })
 export class ValidateTokenComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 }
