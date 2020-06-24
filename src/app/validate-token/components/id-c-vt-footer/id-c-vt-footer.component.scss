@@ -68,12 +68,20 @@ footer {
     
 }
 
-@media (min-width: 1050px) and (max-width: 1280px) {
+@media (min-width: 1050px) and (max-width: 1380px) {
     footer {
         img {
             height: 330px;
             width: 90%;
             bottom: -25px;
+        }
+    }
+}
+
+@media (min-width: 1360px) {
+    footer {
+        img {
+            width: 85%;
         }
     }
 }
