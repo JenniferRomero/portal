@@ -6,7 +6,7 @@ import { GenerateQrService } from 'src/app/services/services.index';
 @Component({
   selector: 'app-id-c-carousel',
   templateUrl: './id-c-carousel.component.html',
-  styleUrls: ['./id-c-carousel.component.scss'],
+  //styleUrls: ['./id-c-carousel.component.scss'],
   providers: [ TranslateService ]
 })
 export class IdCCarouselComponent implements OnInit {
