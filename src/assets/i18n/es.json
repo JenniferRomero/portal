@@ -27,7 +27,7 @@
         "text": "Disponible en Google Play para <br>Android y App Store para iOS."
       },
       "slideSecond": {
-        "subtitle": "Inicia el lector de códigos",
+        "subtitle": "Presiona el botón para abrir la cámara <br>y escanear el código QR",
         "text": "En la pantalla de inicio, ubica el lector <br>de QR en la parte inferior de la pantalla."
       },
       "slideThird": {
@@ -42,7 +42,7 @@
   "validate-token": {
     "pages": {
       "validate": {
-        "title": "Estamos validando tu correo electrónico",
+        "title": "Estamos validando <br> tu correo electrónico",
         "subtitle": {
           "text": "Recuerda esta validación tiene ",
           "span": "vigencia de 10 minutos."
@@ -57,7 +57,7 @@
         "title": "Revisa tu teléfono",
         "description": "Pronto enviaremos una notificación de respuesta a tu teléfono.",
         "end": "Ya puedes cerrar esta pestaña."
-      }, 
+      },
       "error": {
         "title": "Tu verificación a expirado",
         "description": "Pero no te preocupes, ingresa a soyyo App e inténtalo de nuevo."

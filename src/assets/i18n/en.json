@@ -1,39 +1,75 @@
 {
-    "error": {
-        "validate_data": {
-            "documentId": {
-                "empty": "El campo cédula es obligatorio",
-                "type": "El tipo de documento no es aceptado",
-                "regex": "El campo cédula no tiene el formato correcto",
-                "length_min": "El campo cédula debe ser mayor a 6 caracteres",
-                "length_max": "El campo cédula debe ser menor a 10 caracteres"
-            }
+  "error": {
+      "validate_data": {
+          "documentId": {
+              "empty": "El campo cédula es obligatorio",
+              "regex": "El campo cédula no tiene el formato correcto",
+              "length_min": "El campo cédula debe ser mayor a 6 caracteres",
+              "length_max": "El campo cédula debe ser menor a 10 caracteres"
+          },
+          "documentType": {
+              "empty": "El campo cédula es obligatorio",
+              "type": "El tipo de documento no es aceptado"
+          }
+      }
+  },
+  "dashboard": {
+    "welcome": "Bienvenido",
+    "text-welcome": "Soy<b>yo</b> te ayudará a finalizar tu proceso con xxxx",
+    "title-register": "¿Ya eres usuario en soyyo?",
+    "text-register": "Revisa tu celular, en un momento recibirás una notificación.",
+    "text-help": "¿Necesitas ayuda?"
+  },
+  "carrusel": {
+      "title": "¿No estás registrado?",
+      "slideFirst": {
+        "subtitle": "Descarga el App",
+        "text": "Disponible en Google Play para <br>Android y App Store para iOS."
+      },
+      "slideSecond": {
+        "subtitle": "Presiona el botón para abrir la cámara <br>y escanear el código QR",
+        "text": "En la pantalla de inicio, ubica el lector <br>de QR en la parte inferior de la pantalla."
+      },
+      "slideThird": {
+        "subtitle": "Lee el QR",
+        "text": "Escanea el siguiente código con la cámara, <br>apuntando directamente a la siguiente forma:"
+      },
+      "slideFourth": {
+        "subtitle": "Llena tus datos y autoriza",
+        "text": "Llena los datos que te solicitamos. Al finalizar, <br>autoriza a XXXX el uso de tus datos."
+      }
+  },
+  "validate-token": {
+    "pages": {
+      "validate": {
+        "title": "Estamos validando <br> tu correo electrónico",
+        "subtitle": {
+          "text": "Recuerda esta validación tiene ",
+          "span": "vigencia de 10 minutos."
         }
+      }
     },
-    "dashboard": {
-      "welcome": "Bienvenido",
-      "text-welcome": "Soy<b>yo</b> te ayudará a finalizar tu proceso con xxxx",
-      "title-register": "¿Ya eres usuario en soyyo?",
-      "text-register": "Revisa tu celular, en un momento recibirás una notificación.",
-      "text-help": "¿Necesitas ayuda?"
+    "state": {
+      "loading": {
+        "description": "Estamos validando, solo tomará unos segundos..."
+      },
+      "success": {
+        "title": "Revisa tu teléfono",
+        "description": "Pronto enviaremos una notificación de respuesta a tu teléfono.",
+        "end": "Ya puedes cerrar esta pestaña."
+      },
+      "error": {
+        "title": "Tu verificación a expirado",
+        "description": "Pero no te preocupes, ingresa a soyyo App e inténtalo de nuevo."
+      }
     },
-    "carrusel": {
-        "title": "¿No estás registrado?",
-        "slideFirst": {
-          "subtitle": "Descarga el App",
-          "text": "Disponible en Google Play para <br>Android y App Store para iOS."
-        },
-        "slideSecond": {
-          "subtitle": "Inicia el lector de códigos",
-          "text": "En la pantalla de inicio, ubica el lector <br>de QR en la parte inferior de la pantalla."
-        },
-        "slideThird": {
-          "subtitle": "Lee el QR",
-          "text": "Escanea el siguiente código con la cámara, <br>apuntando directamente a la siguiente forma:"
-        },
-        "slideFourth": {
-          "subtitle": "Llena tus datos y autoriza",
-          "text": "Llena los datos que te solicitamos. Al finalizar, <br>autoriza a XXXX el uso de tus datos."
-        }
+    "footer": {
+      "title": "¿Tienes dudas?",
+      "options": {
+        "contact": "Contáctanos",
+        "report": "Reportar falla",
+        "FAQ": "Preguntas frecuentes"
+      }
     }
+  }
 }
