@@ -42,7 +42,7 @@
   "validate-token": {
     "pages": {
       "validate": {
-        "title": "Estamos validando tu correo electrónico",
+        "title": "Estamos validando <br> tu correo electrónico",
         "subtitle": {
           "text": "Recuerda esta validación tiene ",
           "span": "vigencia de 10 minutos."

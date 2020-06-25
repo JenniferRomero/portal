@@ -25,12 +25,6 @@ import { HttpClientTrans, HttpLoaderFactory } from './core/translate/translate.l
     AppComponent
   ],
   imports: [
-    SharedModule,
-    BrowserModule,
-    ServicesModule,
-    AppRoutingModule,
-    HttpClientModule,
-    NgIdleKeepaliveModule.forRoot(),
     TranslateModule.forRoot({
       defaultLanguage: 'es',
       loader: {
@@ -39,6 +33,12 @@ import { HttpClientTrans, HttpLoaderFactory } from './core/translate/translate.l
           deps: [HttpClientTrans]
       }
     }),
+    SharedModule,
+    BrowserModule,
+    ServicesModule,
+    AppRoutingModule,
+    HttpClientModule,
+    NgIdleKeepaliveModule.forRoot(),
     LoggerModule.forRoot({
       // serverLoggingUrl: 'api/logs',
       level: NgxLoggerLevel.DEBUG,

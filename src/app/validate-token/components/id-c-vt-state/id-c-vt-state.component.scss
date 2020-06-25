@@ -6,7 +6,17 @@
     border-radius: 13px;
 }
 .card-body {
-    padding: 5%;
+    padding: 24px;
+}
+.circle-container {
+    display: flex;
+    padding-left: 0;
+    align-self: center;
+    justify-content: center;
+}
+.card-container {
+    display: flex;
+    align-items: center;
 }
 .circle {
     width: 59px;
@@ -69,5 +79,13 @@
     .description {
         @include font($fnr, normal, 16px);
         letter-spacing: 0;
+    }
+}
+@media (max-width: 576px) {
+    .card-body {
+        padding: 16px;
+    }
+    .circle {
+        height: auto;
     }
 }
