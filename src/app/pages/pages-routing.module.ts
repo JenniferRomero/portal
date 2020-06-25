@@ -11,14 +11,14 @@ const routes: Routes = [
     component: PagesComponent,
     children: [
       {
-        path: '', 
+        path: '',
         redirectTo: RoutingPath.appRouting.pages.modules.dashboard.path,
         pathMatch: 'full'
       },
       {
         path: RoutingPath.appRouting.pages.modules.dashboard.path,
         component: DashboardComponent,
-        //loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule),
+        loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule),
         data: {
           breadcrumb: RoutingPath.appRouting.pages.modules.dashboard.breadcrumb
         }

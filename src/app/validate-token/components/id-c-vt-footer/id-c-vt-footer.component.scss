@@ -1,0 +1,108 @@
+@import '../../../../assets/scss/partials/var_mixins';
+
+footer {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+
+    img {
+        right: 0;
+        bottom: 0;
+        height: 460px;
+        width: 83%;
+        position: fixed;
+    }
+
+    .title-footer {
+        color: #5A33FF;
+        letter-spacing: 0;
+        line-height: 22px;
+        float: right;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        margin-bottom: 4%;
+
+        .doubts {
+            @include font($fnb, bold, 14px);
+        }
+        .options a {
+            color: #5A33FF;
+            margin-right: 3%;
+            text-decoration: underline;
+            @include font($fnr, normal, 14px);
+        }
+    }
+}
+
+// Small - Mobile
+@media (max-width: 540px) {
+    footer {
+        margin-top: -38%;
+
+        img {
+            width: auto;
+            height: 360px;
+            position: initial;
+        }
+        .title-footer {
+            margin-top: -48%;
+            position: relative;
+            margin-bottom: 0px;
+
+            .doubts {
+                margin-bottom: 6%;
+            }
+
+            .options a {
+                display: block;
+                padding-bottom: 5%;
+            }
+        }
+    }
+}
+
+// Medium - Tablet
+@media (min-width: 541px) and (max-width: 767px) {
+    footer {
+        img {
+            width: auto;
+            height: auto;
+            position: initial;
+        }
+        .title-footer {
+            position: relative;
+            margin-top: -22%;
+
+            .options a {
+                display: initial;
+            }
+        }
+    }
+}
+
+// Medium - Desktop
+@media (min-width: 768px) and (max-width: 1024px) {
+    footer {
+        img {
+            width: auto;
+            height: auto;
+            position: initial;
+        }
+        .title-footer {
+            position: relative;
+            margin-top: -17%;
+        }
+    }
+}
+
+// Large - Desktop
+@media (min-width: 1025px) and (max-width: 1360px) {
+    footer {
+        img {
+            height: 330px;
+            width: 90%;
+            bottom: -25px;
+        }
+    }
+}

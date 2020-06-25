@@ -4,23 +4,23 @@ import { PageNotFoundComponent } from './shared/shared.index';
 import { PreloadingStrategyService } from './core/routes/preloading-strategy.service';
 
 const appRoutes: Routes = [
-  {
+  /*{
     path: '',
     redirectTo: '',
     pathMatch: 'full',
-  },
+  },*/
   {
-    path: 'portal',
+    path: '',
     loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule),
     data: { preload: false }
   },
   {
-    path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule),
+    path: 'validate-token',
+    loadChildren: () => import('./validate-token/validate-token.module').then(m => m.ValidateTokenModule),
   },
   {
-    path: '**', 
-    component: PageNotFoundComponent 
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 

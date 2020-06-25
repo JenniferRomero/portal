@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row m-0">
+            <div class="col-3 col-md-3 circle-container">
+                <div class="circle circle-loader" *ngIf="isLoading">
+                    <div class="spinner-border text-light" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="circle" *ngIf="isSuccess">
+                    <img src="assets/images/smartphone-alert-icon.svg">
+                </div>
+                <div class="circle circle-error" *ngIf="isError">
+                    <img src="assets/images/exclamation-alert-icon.svg">
+                </div>
+            </div>
+            <div class="col-9 col-md-9 p-0 card-container">
+                <div class="loading" *ngIf="isLoading">
+                    <p class="description">
+                        {{ 'validate-token.state.loading.description' | translate }}
+                    </p>
+                </div>
+                <div class="success" *ngIf="isSuccess">
+                    <p class="title">
+                        {{ 'validate-token.state.success.title' | translate }}
+                    </p>
+                    <p class="description">
+                        {{ 'validate-token.state.success.description' | translate }}
+                    </p>
+                    <p class="end">
+                        {{ 'validate-token.state.success.end' | translate }}
+                    </p>
+                </div>
+                <div class="error" *ngIf="isError">
+                    <p class="title">
+                        {{ 'validate-token.state.error.title' | translate }}
+                    </p>
+                    <p class="description">
+                        {{ 'validate-token.state.error.description' | translate }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,37 @@
-<div class="container m-5">
-    This is all my content in dashboard
+<div class="container_dashboard">
+  <div class="container_base">
+    <div class="row in-line">
+      <div class="col-md-6">
+        <div class="row logo">
+          <img class="img" src="assets/images/logo.svg" alt="">
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label class="welcome">
+              {{'dashboard.welcome' | translate}}
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label class="text-welcome" [innerHTML]="'dashboard.text-welcome' | translate"></label>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--Componente Usuario-->
+          <app-id-c-user></app-id-c-user>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label class="text-help"><u>{{'dashboard.text-help' | translate}}</u></label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!--Componente Carrusel-->
+        <app-id-c-carousel></app-id-c-carousel>
+      </div>
+    </div>
+  </div>
 </div>
