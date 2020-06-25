@@ -24,7 +24,7 @@
             </div>
           </div>
           <div class="slide">
-            <div class="row name">{{subtitleSecond | translate}}</div>
+            <div class="row name" [innerHTML]="subtitleSecond | translate"></div>
             <div class="row description" [innerHTML]="textSecond | translate"></div>
             <div class="slide-content">
               <img class="img_slider" [src]=imagePathSecond alt="">
