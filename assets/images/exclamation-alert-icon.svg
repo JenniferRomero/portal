@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>9355260B-7BE2-4CB6-ADCF-46BC6670EC3Aalert-icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop-landing-flujo2-V3.2" transform="translate(-730.000000, -500.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Notificacion" transform="translate(690.000000, 459.000000)">
+                <g id="Group-3" transform="translate(24.000000, 24.000000)">
+                    <g id="Group-4">
+                        <g id="exclamation" transform="translate(16.000000, 17.000000)">
+                            <path d="M13,0 C5.81430078,0 0,5.81480859 0,13 C0,20.1856992 5.81480859,26 13,26 C20.1856992,26 26,20.1851914 26,13 C26,5.81430078 20.1851914,0 13,0 Z M13,23.96875 C6.93707422,23.96875 2.03125,19.0625195 2.03125,13 C2.03125,6.93707422 6.93748047,2.03125 13,2.03125 C19.0629258,2.03125 23.96875,6.93748047 23.96875,13 C23.96875,19.0629258 19.0625195,23.96875 13,23.96875 Z" id="Shape"></path>
+                            <path d="M13,6.54453516 C12.4390703,6.54453516 11.984375,6.99923047 11.984375,7.56016016 L11.984375,14.1004297 C11.984375,14.6613594 12.4390703,15.1160547 13,15.1160547 C13.5609297,15.1160547 14.015625,14.6613594 14.015625,14.1004297 L14.015625,7.56016016 C14.015625,6.99923047 13.5609297,6.54453516 13,6.54453516 Z" id="Path"></path>
+                            <circle id="Oval" cx="13" cy="17.7307812" r="1.37109375"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,138 @@
+.container_dashboard {
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.container_base {
+  align-items: center;
+  display: table-cell;
+  vertical-align: middle;
+  background: #F1F2F3 url('assets/images/fondo.png') no-repeat;
+  background-position-y: 37px;
+  position: relative;
+}
+
+.in-line {
+  margin: 0px 150px;
+}
+
+.welcome {
+  height: 57px;
+  width: 215px;
+  color: #2E2C35;
+  margin: 0px 0px 9px 0px;
+  @include font($fnb, normal, 42px);
+}
+
+.text-welcome {
+  color: #2E2C35;
+  margin: 0px 0px 38px 0px;
+  @include font($fnr, normal, 18px);
+}
+
+.logo {
+  margin: 40px 0px 45px 0px;
+}
+
+.user {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin: 0px 0px 32px 10px;
+  .tel {
+    padding: 24px;
+    text-align: center;
+  }
+}
+
+.c-user{
+  padding: 0px 10px 0px 0px;
+}
+
+.title-user {
+  color: #FFA329;
+  padding: 20px 0px 0px 0px;
+  margin: 0px;
+  @include font($fnb, normal, 16px);
+}
+
+.text-user {
+  color: #2E2C35;
+  padding: 0px 0px 20px 0px;
+  margin: 0px;
+  @include font($fnr, normal, 16px);
+}
+
+.text-help {
+  color: #5A33FF;
+  @include font($fnl, normal, 11px);
+}
+
+/*safari */
+@media (min-width: 1700px) and (max-width: 3100px){
+  .in-line {
+    margin: 0px 200px;
+  }
+  .img {
+    width: 200px;
+    height: 100px;
+  }
+  .welcome {
+    margin: 0px 0px 25px 0px;
+    @include font($fnb, normal, 52px);
+  }
+  .text-welcome {
+    margin: 0px 0px 48px 0px;
+    @include font($fnr, normal, 23px);
+  }
+  .img_telephone {
+    width: 70px;
+    height: 70px;
+  }
+  .title-user {
+    @include font($fnb, normal, 23px);
+  }
+  .text-user {
+    @include font($fnr, normal, 18px);
+  }
+  .text-help {
+    @include font($fnl, normal, 18px);
+  }
+}
+/*otros*/
+@media screen and (max-width: 1280px) {
+  .in-line {
+    margin: 0px 130px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .in-line {
+    margin: 0px 110px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .in-line {
+    margin: 0px 80px;
+  }
+  .c-user {
+    padding: 0px 10px 0px 10px;
+  }
+}
+@media screen and (max-width: 987px) {
+  .in-line {
+    margin: 0px 40px;
+  }
+}
+@media screen and (max-width: 967px) {
+  .in-line {
+    margin: 0px 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container_dashboard {
+    position: absolute;
+  }
+}
+
