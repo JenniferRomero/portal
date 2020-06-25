@@ -2,8 +2,8 @@ import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-id-c-vt-state',
-  templateUrl: './id-c-vt-state.component.html',
-  styleUrls: ['./id-c-vt-state.component.scss']
+  templateUrl: './id-c-vt-state.component.html' //,
+  // styleUrls: ['./id-c-vt-state.component.scss']
 })
 export class IdCVtStateComponent implements OnInit {
 
@@ -28,19 +28,19 @@ export class IdCVtStateComponent implements OnInit {
     this.isSuccess = false;
     this.isLoading = false;
 
-    switch(state) { 
-      case 'loading': { 
+    switch(state) {
+      case 'loading': {
          this.isLoading = true;
-         break; 
-      } 
-      case 'success': { 
+         break;
+      }
+      case 'success': {
          this.isSuccess = true;
-         break; 
-      } 
-      default: { 
+         break;
+      }
+      default: {
          this.isError = true;
-         break; 
-      } 
-   } 
+         break;
+      }
+   }
   };
 }
