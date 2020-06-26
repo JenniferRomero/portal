@@ -5,8 +5,8 @@ import { ValidateTokenService } from '../../services/http/validate-token.service
 
 @Component({
   selector: 'app-validate',
-  templateUrl: './validate.component.html',
-  styleUrls: ['./validate.component.scss']
+  templateUrl: './validate.component.html' //,
+  // styleUrls: ['./validate.component.scss']
 })
 export class ValidateComponent implements OnInit {
 
@@ -27,7 +27,7 @@ export class ValidateComponent implements OnInit {
     let processType = 'ENR';
 
     let data = new ValidateToken(this.idProcess, this.idNumber, channel, processType, this.token);
-    
+
     this._validateTokenService.validateToken(data).subscribe(resp => {
       console.log(resp);
       if(resp['code'] == 'F084'){
