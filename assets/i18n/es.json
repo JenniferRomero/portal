@@ -44,7 +44,7 @@
       "validate": {
         "title": "Estamos validando <br> tu correo electrónico",
         "subtitle": {
-          "text": "Recuerda esta validación tiene ",
+          "text": "Recuerda que esta validación tiene ",
           "span": "vigencia de 10 minutos."
         }
       }

@@ -2992,7 +2992,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\Jennifer Romero\Aplicaciones\WEB\soyyo_web_transacciones - copia\src\main.ts */
+    /*! C:\Users\Jennifer Romero\Aplicaciones\WEB\soyyo_web_transacciones\src\main.ts */
     "./src/main.ts");
     /***/
   },
