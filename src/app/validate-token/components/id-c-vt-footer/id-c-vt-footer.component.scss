@@ -115,8 +115,6 @@ footer:before {
 // Large - Desktop
 @media (min-width: 1360px) {
     footer {
-        height: 200px;
-
         img {
             height: 330px;
             width: 90%;
@@ -124,7 +122,16 @@ footer:before {
         }
     }
     footer::before {
-        height: 500px;
+        height: 350px;
         background-size: cover;
+    }
+}
+
+@media (min-width: 1600px){
+    footer {
+        height: 200px;
+    }
+    footer::before {
+        height: 490px;
     }
 }
