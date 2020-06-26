@@ -25,7 +25,9 @@
 .codqr{
   width: 171px;
   height: 180px;
-  border-radius: 20px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  padding: 15px;
 }
 
 #slider input[type=radio] {
@@ -120,11 +122,14 @@ div.description {
 #controls label:hover {
   opacity: 1;
 }
+#slide1:checked ~ #controls label{
+  content: "Anterior";
+}
 
 #slide1:checked ~ #controls label:nth-child(2),
 #slide2:checked ~ #controls label:nth-child(3),
 #slide3:checked ~ #controls label:nth-child(4) {
-  background: url('/assets/images/siguiente.png') no-repeat;
+  background: url('/assets/images/siguiente.svg') no-repeat;
   float: right;
   margin: 35px 40px 0px 0px;
   height: 50px;
@@ -134,7 +139,7 @@ div.description {
 }
 
 #slide4:checked ~ #controls label:nth-child(4) {
-  background: url('/assets/images/siguiente_gris.png') no-repeat;
+  background: url('/assets/images/siguiente_gris.svg') no-repeat;
   float: right;
   margin: 35px 40px 0px 0px;
   height: 50px;
@@ -146,7 +151,7 @@ div.description {
 #slide2:checked ~ #controls label:nth-child(1),
 #slide3:checked ~ #controls label:nth-child(2),
 #slide4:checked ~ #controls label:nth-child(3) {
-  background: url("/assets/images/anterior.png") no-repeat;
+  background: url("/assets/images/anterior.svg") no-repeat;
   float: left;
   margin: 35px 0px 0px 40px;
   height: 50px;
@@ -156,7 +161,7 @@ div.description {
 }
 
 #slide1:checked ~ #controls label:nth-child(1) {
-  background: url("/assets/images/anterior_gris.png") no-repeat;
+  background: url("/assets/images/anterior_gris.svg") no-repeat;
   float: left;
   margin: 35px 0px 0px 40px;
   height: 50px;

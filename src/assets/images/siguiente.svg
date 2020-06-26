@@ -1,21 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="92px" height="14px" viewBox="0 0 92 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>siguiente</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Registro-Web-3-QR-blanco" transform="translate(-1004.000000, -547.000000)">
-            <g id="siguiente" transform="translate(1004.000000, 544.000000)">
-                <g id="Group-4">
-                    <g id="Group" transform="translate(79.000000, 4.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <polyline id="Path-3" points="6.75 0 12 5.25 6.75 10.5"></polyline>
-                        <line x1="12" y1="5.25" x2="0" y2="5.25" id="Path-4"></line>
-                    </g>
-                    <g id="Group-2" fill="#FFFFFF" font-family="Nunito-ExtraBold, Nunito" font-size="14" font-weight="600">
-                        <text id="Siguiente">
-                            <tspan x="0" y="14">Siguiente</tspan>
-                        </text>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="92px" height="19px" viewBox="0 0 92 19" enable-background="new 0 0 92 19" xml:space="preserve">  <image id="image0" width="92" height="19" x="0" y="0"
+    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAATCAQAAAC36KJqAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElN
+RQfkBhsBBSgAWeCCAAADF0lEQVRIx+2SbWiVZRyHr+fszPkC5VgzexONTQZZmMu1ikpYyzKizH1Q
+0CCkN4KgIJD19mXLgkDFSDGtsHAxBLEIkkUtUVKHi6nUqJhxTG26Nadn7uVsu/qw4/E51jwbmn7Z
+7/ly3//7d//u67nvP4xpTKOTkdD4NqeOaE+2JY6/Qnx5trjBrDRkK22017+tdwE4R21PswwXtlLd
+eMXAO9UtIS5r1LjfutcB9WEn+7WrRxRW5g8uHIFvuSd88JLRS9PQzbPfhAUAzvIDr/8fbutzdcVl
+yAmjW6QmvD+0PNGDfpK8qZ9sc5PPGHMeuN5mrwELPWwlWO4RKwB83SZPWGs+WG7MJW72pDssM8c6
+T6mt7nM2WG6dHe60/NLRd6v6h+ucD+BstR180kEH/c4WB9Q3waPq3eBidRdYra4D31F3u8a4+5PV
+AX/1gPqLUTd7XP3d7c70Xrs95vs2e9bbM2KusP5f334T6l7A8b5ho0P63gkp8C/Ud8GIMfWt4cAN
+7LDHGeb6qVpotXoInGCPOi3cKn6kvmiuC9XKjOAtDqe+KAQ9VFHlNJ7gPeaxlIbkvgKgAYJBG7nl
+IvnTmQw0A9BNPgC7IOj2JDdzE7GQ905gDauBPnIzdsZcLnyVCJWU0cVTUadQQU3QEcRY6zLmEqRM
+TRSzyK/I44FkpZUbuQ6YkxYWI04O04PjYBDoY4BpjjiQDcDPFPNysH7ImYk7aKc+7QWy+IwyTjM/
+2IPL1bjb3WiD2unUVKuU2KW2mfBUslWq1d+stfeCHt+gHnSltZ7xjnNV8Ih6D/i4etjXzPcR+233
+Q9d61Lcz3nh642S5Re20dGga9XkPmVBPW2cBeK1tfgPgfW5yhy9Zo74K3upWe/3LFzzrKrDCPp8F
+s1zln+oZP3aSFfb5HIDb7DAfHGeVx0y4AFxkk/0OuNPiUYKHsUN/M8VUkxgF8AZfsciIJXaqDyXX
+JgKYnZxlhzJyzyWcrw4lARhxXGo8yZzRQYOF/4E9jPVRVftV3Tbagy6/fNqi87PgotaZlHIXXfwY
+fHm1scd0tfUPIGG/vEcAqy0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDYtMjdUMDE6MDU6NDAr
+MDM6MDAVxbaGAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTA2LTI3VDAxOjA1OjQwKzAzOjAwZJgO
+OgAAAABJRU5ErkJggg==" />
 </svg>
