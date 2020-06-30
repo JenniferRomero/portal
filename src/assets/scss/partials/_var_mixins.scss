@@ -2,6 +2,7 @@
 $fnb: nunito-bold;
 $fnr: nunito-regular;
 $fnl: nunito-light;
+$fneb: nunito-extra-bold;
 
 // Colors
 
@@ -23,6 +24,13 @@ $fnl: nunito-light;
 @font-face {
   font-family: nunito-light;
   src: url('/assets/fonts/Nunito-Light.ttf') format("truetype");
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: nunito-extra-bold;
+  src: url('/assets/fonts/Nunito-ExtraBold.ttf') format("truetype");
   font-weight: normal;
 }
 

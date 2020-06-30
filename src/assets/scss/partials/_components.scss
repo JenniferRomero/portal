@@ -67,7 +67,8 @@
 
 .text-help {
   color: #5A33FF;
-  @include font($fnl, normal, 11px);
+  text-decoration: underline;
+  @include font($fnl, normal, 13px);
 }
 
 /*safari */
@@ -109,12 +110,12 @@
 }
 @media screen and (max-width: 1180px) {
   .in-line {
-    margin: 0px 110px;
+    margin: 0px 100px;
   }
 }
 @media screen and (max-width: 1090px) {
   .in-line {
-    margin: 0px 80px;
+    margin: 0px 70px;
   }
   .c-user {
     padding: 0px 10px 0px 10px;
