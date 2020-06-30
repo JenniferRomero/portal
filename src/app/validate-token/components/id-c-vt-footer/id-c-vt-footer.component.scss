@@ -33,7 +33,7 @@ footer {
             color: #5A33FF;
             margin-right: 3%;
             text-decoration: underline;
-            @include font($fnr, normal, 14px);
+            @include font($fnl, normal, 13px);
         }
     }
 }
