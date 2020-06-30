@@ -102,6 +102,16 @@ div.description {
   color: #FFFFFF;
 }
 
+#end {
+  @include font($fneb,normal,14px);
+  color: #FFFFFF;
+  margin: 30px 0px 0px 0px;
+}
+
+.spadd {
+  padding: 0px;
+}
+
 #controls {
   margin: 0 0 0 0;
   width: 100%;
@@ -122,58 +132,79 @@ div.description {
 #controls label:hover {
   opacity: 1;
 }
-#slide1:checked ~ #controls label{
+#slide2:checked ~ #end #prev label:nth-child(1)::after,
+#slide3:checked ~ #end #prev label:nth-child(2)::after,
+#slide4:checked ~ #end #prev label:nth-child(3)::after {
+  background: url("/assets/images/arrow.svg") no-repeat;
+  background-position-x: 0px;
+  background-position-y: center;
   content: "Anterior";
+  padding: 0px 30px;
+  margin: 0px 5px 0px 15px;
+  //float: left;
+  //margin: 35px 0px 0px 40px;
+  //height: 50px;
+  //width: 100px;
+  //padding: 0px;
+  //display: block;
 }
 
-#slide1:checked ~ #controls label:nth-child(2),
-#slide2:checked ~ #controls label:nth-child(3),
-#slide3:checked ~ #controls label:nth-child(4) {
-  background: url('/assets/images/siguiente.svg') no-repeat;
-  float: right;
-  margin: 35px 40px 0px 0px;
-  height: 50px;
-  width: 100px;
-  padding: 0px;
-  display: block;
+#slide1:checked ~ #end #prev label:nth-child(1)::after {
+  background: url("/assets/images/arrow.svg") no-repeat;
+  background-position-x: 0px;
+  background-position-y: center;
+  content: "Anterior";
+  padding: 0px 30px;
+  margin: 0px 5px 0px 15px;
+  opacity: 0.4;
+  //margin: 35px 0px 0px 40px;
+  //height: 50px;
+  //width: 100px;
+  //padding: 0px;
+  //display: block;
 }
 
-#slide4:checked ~ #controls label:nth-child(4) {
-  background: url('/assets/images/siguiente_gris.svg') no-repeat;
-  float: right;
-  margin: 35px 40px 0px 0px;
-  height: 50px;
-  width: 100px;
-  padding: 0px;
-  display: block;
+
+
+#slide1:checked ~ #end #next label:nth-child(2)::after,
+#slide2:checked ~ #end #next label:nth-child(3)::after,
+#slide3:checked ~ #end #next label:nth-child(4)::after {
+  background: url('/assets/images/arrow2.svg') no-repeat;
+  background-position-x: 0px;
+  background-position-y: center;
+  background-position: right;
+  content: "Siguiente";
+  padding: 0px 30px;
+  margin: 0px 15px 0px 5px;
+  //margin: 35px 40px 0px 0px;
+  //height: 50px;
+  //width: 100px;
+  //padding: 0px;
+  //display: block;
 }
 
-#slide2:checked ~ #controls label:nth-child(1),
-#slide3:checked ~ #controls label:nth-child(2),
-#slide4:checked ~ #controls label:nth-child(3) {
-  background: url("/assets/images/anterior.svg") no-repeat;
-  float: left;
-  margin: 35px 0px 0px 40px;
-  height: 50px;
-  width: 100px;
-  padding: 0px;
-  display: block;
+#slide4:checked ~ #end #next label:nth-child(4)::after {
+  background: url('/assets/images/arrow2.svg') no-repeat;
+  background-position-x: 0px;
+  background-position-y: center;
+  background-position: right;
+  content: "Siguiente";
+  padding: 0px 30px;
+  margin: 0px 15px 0px 5px;
+  opacity: 0.4;
+  //background: url('/assets/images/siguiente_gris.svg') no-repeat;
+  //margin: 35px 40px 0px 0px;
+  //height: 50px;
+  //width: 100px;
+  //padding: 0px;
+  //display: block;
 }
 
-#slide1:checked ~ #controls label:nth-child(1) {
-  background: url("/assets/images/anterior_gris.svg") no-repeat;
-  float: left;
-  margin: 35px 0px 0px 40px;
-  height: 50px;
-  width: 100px;
-  padding: 0px;
-  display: block;
-}
 
-#bullets {
+/*#bullets {
   margin: 0 0 0;
   text-align: center;
-}
+}*/
 
 #bullets label {
   border-radius: 5px;
@@ -184,10 +215,10 @@ div.description {
   background-color: rgba(255, 255, 255, 0.30);
 }
 
-#slide1:checked ~ #bullets label:nth-child(1),
-#slide2:checked ~ #bullets label:nth-child(2),
-#slide3:checked ~ #bullets label:nth-child(3),
-#slide4:checked ~ #bullets label:nth-child(4) {
+#slide1:checked ~ #end #bullets label:nth-child(1),
+#slide2:checked ~ #end #bullets label:nth-child(2),
+#slide3:checked ~ #end #bullets label:nth-child(3),
+#slide4:checked ~ #end #bullets label:nth-child(4) {
   background-color: #FFFFFF;
 }
 
@@ -236,9 +267,14 @@ div.description {
 }
 
 /*otros*/
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1310px) {
   .carrousel {
-    margin: 0px 15px;
+    margin: 0px 0px;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .carrousel {
+    margin: 0px 0px;
   }
 }
 @media screen and (max-width: 967px) {
