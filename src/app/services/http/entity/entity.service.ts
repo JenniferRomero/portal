@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment as ENV } from 'src/environments/environment';
-import { GenerateQr } from 'src/app/core/models/generate-qr.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class GenerateQrService {
+export class EntityService {
 
   constructor(private http: HttpClient) { }
 
-  getQRCode(generateQr: GenerateQr) {
-    return this.http.post(ENV['endpoints']['generateQR'], generateQr);
+  getEntity(idNumber: number){
+    return this.http.get(ENV['endpoints']['validateEntity']);
+    //return this.http.get(ENV['endpoints']['validateEntity'] + '/entities/' + idNumber);
   }
 }
