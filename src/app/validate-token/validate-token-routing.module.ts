@@ -12,21 +12,21 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: RoutingPath.appRouting.transaction.pages.error.path,
+        redirectTo: RoutingPath.appRouting.validateToken.pages.error.path,
         pathMatch: 'full'
       },
       {
-        path: RoutingPath.appRouting.transaction.pages.validate.path,
+        path: RoutingPath.appRouting.validateToken.pages.validate.path,
         component: ValidateComponent,
         data: {
-          breadcrumb: RoutingPath.appRouting.transaction.pages.validate.breadcrumb
+          breadcrumb: RoutingPath.appRouting.validateToken.pages.validate.breadcrumb
         }
       },
       {
-        path: RoutingPath.appRouting.transaction.pages.error.path,
+        path: RoutingPath.appRouting.validateToken.pages.error.path,
         component: ErrorComponent,
         data: {
-          breadcrumb: RoutingPath.appRouting.transaction.pages.error.breadcrumb
+          breadcrumb: RoutingPath.appRouting.validateToken.pages.error.breadcrumb
         }
       }
     ]

@@ -12,15 +12,15 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: RoutingPath.appRouting.pages.modules.dashboard.path,
+        redirectTo: RoutingPath.appRouting.pages.modules.transactions.path,
         pathMatch: 'full'
       },
       {
-        path: RoutingPath.appRouting.pages.modules.dashboard.path,
+        path: RoutingPath.appRouting.pages.modules.transactions.path,
         component: DashboardComponent,
         loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule),
         data: {
-          breadcrumb: RoutingPath.appRouting.pages.modules.dashboard.breadcrumb
+          breadcrumb: RoutingPath.appRouting.pages.modules.transactions.breadcrumb
         }
       },
       {
