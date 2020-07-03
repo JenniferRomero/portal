@@ -4,11 +4,6 @@ import { PageNotFoundComponent } from './shared/shared.index';
 import { PreloadingStrategyService } from './core/routes/preloading-strategy.service';
 
 const appRoutes: Routes = [
-  /*{
-    path: '',
-    redirectTo: '',
-    pathMatch: 'full',
-  },*/
   {
     path: '',
     loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule),
