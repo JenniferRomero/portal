@@ -130,13 +130,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! ./core/routes/preloading-strategy.service */
     "./src/app/core/routes/preloading-strategy.service.ts");
 
-    var appRoutes = [
-    /*{
-      path: '',
-      redirectTo: '',
-      pathMatch: 'full',
-    },*/
-    {
+    var appRoutes = [{
       path: '',
       loadChildren: function loadChildren() {
         return Promise.all(
@@ -1685,6 +1679,90 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/services/http/entity/entity.service.ts":
+  /*!********************************************************!*\
+    !*** ./src/app/services/http/entity/entity.service.ts ***!
+    \********************************************************/
+
+  /*! exports provided: EntityService */
+
+  /***/
+  function srcAppServicesHttpEntityEntityServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "EntityService", function () {
+      return EntityService;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! src/environments/environment */
+    "./src/environments/environment.ts");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
+
+    var EntityService =
+    /*#__PURE__*/
+    function () {
+      function EntityService(http) {
+        _classCallCheck(this, EntityService);
+
+        this.http = http;
+      }
+
+      _createClass(EntityService, [{
+        key: "getEntity",
+        value: function getEntity(idNumber) {
+          return this.http.get(src_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"]['endpoints']['validateEntity']); //return this.http.get(ENV['endpoints']['validateEntity'] + '/entities/' + idNumber);
+        }
+      }]);
+
+      return EntityService;
+    }();
+
+    EntityService.ɵfac = function EntityService_Factory(t) {
+      return new (t || EntityService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]));
+    };
+
+    EntityService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      token: EntityService,
+      factory: EntityService.ɵfac,
+      providedIn: 'root'
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](EntityService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+          providedIn: 'root'
+        }]
+      }], function () {
+        return [{
+          type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+        }];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
   "./src/app/services/http/generate-qr/generate-qr.service.ts":
   /*!******************************************************************!*\
     !*** ./src/app/services/http/generate-qr/generate-qr.service.ts ***!
@@ -1734,8 +1812,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(GenerateQrService, [{
         key: "getQRCode",
         value: function getQRCode(generateQr) {
-          // const urlExample = 'https://reqres.in/api/user';
-          // return this.http.get(urlExample);
           return this.http.post(src_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"]['endpoints']['generateQR'], generateQr);
         }
       }]);
@@ -1942,7 +2018,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     !*** ./src/app/services/services.index.ts ***!
     \********************************************/
 
-  /*! exports provided: EncryptionService, IdleTimeoutService, GenerateQrService, LocalStorageService, ValidateDataService, SessionStorageService, ErrorMessages, ErrorStages, ErrorTypes */
+  /*! exports provided: EntityService, EncryptionService, IdleTimeoutService, GenerateQrService, LocalStorageService, ValidateDataService, SessionStorageService, ErrorMessages, ErrorStages, ErrorTypes */
 
   /***/
   function srcAppServicesServicesIndexTs(module, __webpack_exports__, __webpack_require__) {
@@ -1952,98 +2028,110 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _encryption_encryption_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    var _http_entity_entity_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./http/entity/entity.service */
+    "./src/app/services/http/entity/entity.service.ts");
+    /* harmony reexport (safe) */
+
+
+    __webpack_require__.d(__webpack_exports__, "EntityService", function () {
+      return _http_entity_entity_service__WEBPACK_IMPORTED_MODULE_0__["EntityService"];
+    });
+    /* harmony import */
+
+
+    var _encryption_encryption_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! ./encryption/encryption.service */
     "./src/app/services/encryption/encryption.service.ts");
     /* harmony reexport (safe) */
 
 
     __webpack_require__.d(__webpack_exports__, "EncryptionService", function () {
-      return _encryption_encryption_service__WEBPACK_IMPORTED_MODULE_0__["EncryptionService"];
+      return _encryption_encryption_service__WEBPACK_IMPORTED_MODULE_1__["EncryptionService"];
     });
     /* harmony import */
 
 
-    var _idle_timeout_idle_timeout_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var _idle_timeout_idle_timeout_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./idle-timeout/idle-timeout.service */
     "./src/app/services/idle-timeout/idle-timeout.service.ts");
     /* harmony reexport (safe) */
 
 
     __webpack_require__.d(__webpack_exports__, "IdleTimeoutService", function () {
-      return _idle_timeout_idle_timeout_service__WEBPACK_IMPORTED_MODULE_1__["IdleTimeoutService"];
+      return _idle_timeout_idle_timeout_service__WEBPACK_IMPORTED_MODULE_2__["IdleTimeoutService"];
     });
     /* harmony import */
 
 
-    var _http_generate_qr_generate_qr_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _http_generate_qr_generate_qr_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./http/generate-qr/generate-qr.service */
     "./src/app/services/http/generate-qr/generate-qr.service.ts");
     /* harmony reexport (safe) */
 
 
     __webpack_require__.d(__webpack_exports__, "GenerateQrService", function () {
-      return _http_generate_qr_generate_qr_service__WEBPACK_IMPORTED_MODULE_2__["GenerateQrService"];
+      return _http_generate_qr_generate_qr_service__WEBPACK_IMPORTED_MODULE_3__["GenerateQrService"];
     });
     /* harmony import */
 
 
-    var _local_storage_local_storage_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _local_storage_local_storage_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./local-storage/local-storage.service */
     "./src/app/services/local-storage/local-storage.service.ts");
     /* harmony reexport (safe) */
 
 
     __webpack_require__.d(__webpack_exports__, "LocalStorageService", function () {
-      return _local_storage_local_storage_service__WEBPACK_IMPORTED_MODULE_3__["LocalStorageService"];
+      return _local_storage_local_storage_service__WEBPACK_IMPORTED_MODULE_4__["LocalStorageService"];
     });
     /* harmony import */
 
 
-    var _validate_data_validate_data_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _validate_data_validate_data_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./validate-data/validate-data.service */
     "./src/app/services/validate-data/validate-data.service.ts");
     /* harmony reexport (safe) */
 
 
     __webpack_require__.d(__webpack_exports__, "ValidateDataService", function () {
-      return _validate_data_validate_data_service__WEBPACK_IMPORTED_MODULE_4__["ValidateDataService"];
+      return _validate_data_validate_data_service__WEBPACK_IMPORTED_MODULE_5__["ValidateDataService"];
     });
     /* harmony import */
 
 
-    var _session_storage_session_storage_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _session_storage_session_storage_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./session-storage/session-storage.service */
     "./src/app/services/session-storage/session-storage.service.ts");
     /* harmony reexport (safe) */
 
 
     __webpack_require__.d(__webpack_exports__, "SessionStorageService", function () {
-      return _session_storage_session_storage_service__WEBPACK_IMPORTED_MODULE_5__["SessionStorageService"];
+      return _session_storage_session_storage_service__WEBPACK_IMPORTED_MODULE_6__["SessionStorageService"];
     });
     /* harmony import */
 
 
-    var _exceptions_error_options__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _exceptions_error_options__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./exceptions/error-options */
     "./src/app/services/exceptions/error-options.ts");
     /* harmony reexport (safe) */
 
 
     __webpack_require__.d(__webpack_exports__, "ErrorMessages", function () {
-      return _exceptions_error_options__WEBPACK_IMPORTED_MODULE_6__["ErrorMessages"];
+      return _exceptions_error_options__WEBPACK_IMPORTED_MODULE_7__["ErrorMessages"];
     });
     /* harmony reexport (safe) */
 
 
     __webpack_require__.d(__webpack_exports__, "ErrorStages", function () {
-      return _exceptions_error_options__WEBPACK_IMPORTED_MODULE_6__["ErrorStages"];
+      return _exceptions_error_options__WEBPACK_IMPORTED_MODULE_7__["ErrorStages"];
     });
     /* harmony reexport (safe) */
 
 
     __webpack_require__.d(__webpack_exports__, "ErrorTypes", function () {
-      return _exceptions_error_options__WEBPACK_IMPORTED_MODULE_6__["ErrorTypes"];
+      return _exceptions_error_options__WEBPACK_IMPORTED_MODULE_7__["ErrorTypes"];
     });
     /***/
 

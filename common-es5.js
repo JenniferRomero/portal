@@ -26,11 +26,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     RoutingPath.appRouting = {
-      transaction: {
+      validateToken: {
         pages: {
           validate: {
             path: ':idProcess/:identificationNumber/:token',
-            breadcrumb: 'Inicio de sesión'
+            breadcrumb: 'Validación Token'
           },
           error: {
             path: 'error',
@@ -40,8 +40,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       },
       pages: {
         modules: {
-          dashboard: {
-            path: 'dashboard',
+          transactions: {
+            path: 'transactions/:idTx/:entityId/:userStatus',
             breadcrumb: 'Inicio',
             submodules: {}
           },

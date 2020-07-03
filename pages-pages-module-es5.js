@@ -151,9 +151,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       type: IdCCarouselComponent,
       selectors: [["app-id-c-carousel"]],
       features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([_ngx_translate_core__WEBPACK_IMPORTED_MODULE_1__["TranslateService"]])],
-      decls: 53,
+      decls: 62,
       vars: 31,
-      consts: [[1, "carrousel"], ["id", "slider"], ["checked", "", "type", "radio", "name", "slider", "id", "slide1"], ["type", "radio", "name", "slider", "id", "slide2"], ["type", "radio", "name", "slider", "id", "slide3"], ["type", "radio", "name", "slider", "id", "slide4"], ["id", "slides"], ["id", "overflow"], [1, "inner"], [1, "slide"], [1, "row", "name"], [1, "row", "description", 3, "innerHTML"], [1, "slide-content"], ["alt", "", 1, "img_slider", 3, "src"], [1, "row", "name", 3, "innerHTML"], ["alt", "", 1, "img_slider", "codqr", 3, "src"], ["id", "controls"], ["for", "slide1"], ["for", "slide2"], ["for", "slide3"], ["for", "slide4"], ["id", "bullets"]],
+      consts: [[1, "carrousel"], ["id", "slider"], ["checked", "", "type", "radio", "name", "slider", "id", "slide1"], ["type", "radio", "name", "slider", "id", "slide2"], ["type", "radio", "name", "slider", "id", "slide3"], ["type", "radio", "name", "slider", "id", "slide4"], ["id", "slides"], ["id", "overflow"], [1, "inner"], [1, "slide"], [1, "row", "name"], [1, "row", "description", 3, "innerHTML"], [1, "slide-content"], ["alt", "", 1, "img_slider", 3, "src"], [1, "row", "name", 3, "innerHTML"], ["alt", "", 1, "img_slider", "codqr", 3, "src"], ["id", "end", 1, "row"], [1, "col-md-5", "spadd"], ["id", "prev"], ["for", "slide1"], ["for", "slide2"], ["for", "slide3"], ["for", "slide4"], [1, "col-md-2", "spadd"], ["id", "bullets"], ["id", "next"]],
       template: function IdCCarouselComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -274,25 +274,53 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "div", 16);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](44, "label", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "div", 17);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](45, "label", 18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "div", 18);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](46, "label", 19);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](47, "label", 20);
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](48, "label", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](49, "label", 22);
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "div", 21);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](49, "label", 17);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "div", 23);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](50, "label", 18);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "div", 24);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](51, "label", 19);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](52, "label", 19);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](52, "label", 20);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](53, "label", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](54, "label", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](55, "label", 22);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "div", 17);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "div", 25);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](58, "label", 19);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](59, "label", 20);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](60, "label", 21);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](61, "label", 22);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -534,45 +562,82 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _components_id_c_user_id_c_user_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _services_services_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../../../services/services.index */
+    "./src/app/services/services.index.ts");
+    /* harmony import */
+
+
+    var _components_id_c_user_id_c_user_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./components/id-c-user/id-c-user.component */
     "./src/app/pages/modules/dashboard/components/id-c-user/id-c-user.component.ts");
     /* harmony import */
 
 
-    var _components_id_c_carousel_id_c_carousel_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _components_id_c_carousel_id_c_carousel_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./components/id-c-carousel/id-c-carousel.component */
     "./src/app/pages/modules/dashboard/components/id-c-carousel/id-c-carousel.component.ts");
     /* harmony import */
 
 
-    var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @ngx-translate/core */
     "./node_modules/@ngx-translate/core/__ivy_ngcc__/fesm2015/ngx-translate-core.js");
 
     var DashboardComponent =
     /*#__PURE__*/
     function () {
-      function DashboardComponent() {
+      function DashboardComponent(activatedRoute, _validateEntityService) {
         _classCallCheck(this, DashboardComponent);
+
+        this.activatedRoute = activatedRoute;
+        this._validateEntityService = _validateEntityService;
+        this.getParameters();
+        this.stateProcess = "loading";
       }
 
       _createClass(DashboardComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.validateEntity();
+        }
+      }, {
+        key: "validateEntity",
+        value: function validateEntity() {
+          this._validateEntityService.getEntity(this.entityId).subscribe(function (resp) {
+            console.log(resp);
+          });
+        }
+      }, {
+        key: "getParameters",
+        value: function getParameters() {
+          var _this = this;
+
+          this.activatedRoute.params.subscribe(function (params) {
+            _this.idTx = params['idTx'];
+            _this.entityId = params['entityId'];
+            _this.userStatus = params['userStatus'];
+          });
+        }
       }]);
 
       return DashboardComponent;
     }();
 
     DashboardComponent.ɵfac = function DashboardComponent_Factory(t) {
-      return new (t || DashboardComponent)();
+      return new (t || DashboardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_services_index__WEBPACK_IMPORTED_MODULE_2__["EntityService"]));
     };
 
     DashboardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: DashboardComponent,
       selectors: [["app-dashboard"]],
-      decls: 25,
+      decls: 24,
       vars: 9,
       consts: [[1, "container_dashboard"], [1, "container_base"], [1, "row", "in-line"], [1, "col-md-6"], [1, "row", "logo"], ["src", "assets/images/logo.svg", "alt", "", 1, "img"], [1, "row"], [1, "col-md-12"], [1, "welcome"], [1, "text-welcome", 3, "innerHTML"], [1, "text-help"]],
       template: function DashboardComponent_Template(rf, ctx) {
@@ -631,11 +696,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "label", 10);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "u");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](22, "translate");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](21, "translate");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -645,11 +708,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 3);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "app-id-c-carousel");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "app-id-c-carousel");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -669,13 +730,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("innerHTML", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](14, 5, "dashboard.text-welcome"), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeHtml"]);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](22, 7, "dashboard.text-help"));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](21, 7, "dashboard.text-help"));
         }
       },
-      directives: [_components_id_c_user_id_c_user_component__WEBPACK_IMPORTED_MODULE_1__["IdCUserComponent"], _components_id_c_carousel_id_c_carousel_component__WEBPACK_IMPORTED_MODULE_2__["IdCCarouselComponent"]],
-      pipes: [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_3__["TranslatePipe"]],
+      directives: [_components_id_c_user_id_c_user_component__WEBPACK_IMPORTED_MODULE_3__["IdCUserComponent"], _components_id_c_carousel_id_c_carousel_component__WEBPACK_IMPORTED_MODULE_4__["IdCCarouselComponent"]],
+      pipes: [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_5__["TranslatePipe"]],
       encapsulation: 2
     });
     /*@__PURE__*/
@@ -689,7 +750,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           styles: []
         }]
       }], function () {
-        return [];
+        return [{
+          type: _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]
+        }, {
+          type: _services_services_index__WEBPACK_IMPORTED_MODULE_2__["EntityService"]
+        }];
       }, null);
     })();
     /***/
@@ -872,10 +937,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       component: _pages_component__WEBPACK_IMPORTED_MODULE_1__["PagesComponent"],
       children: [{
         path: '',
-        redirectTo: _configs_routing_path__WEBPACK_IMPORTED_MODULE_2__["RoutingPath"].appRouting.pages.modules.dashboard.path,
+        redirectTo: _configs_routing_path__WEBPACK_IMPORTED_MODULE_2__["RoutingPath"].appRouting.pages.modules.transactions.path,
         pathMatch: 'full'
       }, {
-        path: _configs_routing_path__WEBPACK_IMPORTED_MODULE_2__["RoutingPath"].appRouting.pages.modules.dashboard.path,
+        path: _configs_routing_path__WEBPACK_IMPORTED_MODULE_2__["RoutingPath"].appRouting.pages.modules.transactions.path,
         component: _modules_modules_index__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"],
         loadChildren: function loadChildren() {
           return __webpack_require__.e(
@@ -887,7 +952,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           });
         },
         data: {
-          breadcrumb: _configs_routing_path__WEBPACK_IMPORTED_MODULE_2__["RoutingPath"].appRouting.pages.modules.dashboard.breadcrumb
+          breadcrumb: _configs_routing_path__WEBPACK_IMPORTED_MODULE_2__["RoutingPath"].appRouting.pages.modules.transactions.breadcrumb
         }
       }, {
         path: _configs_routing_path__WEBPACK_IMPORTED_MODULE_2__["RoutingPath"].appRouting.pages.modules.profile.path,

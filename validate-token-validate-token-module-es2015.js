@@ -34,8 +34,6 @@ class ValidateToken {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IdCVtFooterComponent", function() { return IdCVtFooterComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ngx-translate/core */ "./node_modules/@ngx-translate/core/__ivy_ngcc__/fesm2015/ngx-translate-core.js");
-
 
 
 class IdCVtFooterComponent {
@@ -45,39 +43,15 @@ class IdCVtFooterComponent {
     }
 }
 IdCVtFooterComponent.ɵfac = function IdCVtFooterComponent_Factory(t) { return new (t || IdCVtFooterComponent)(); };
-IdCVtFooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: IdCVtFooterComponent, selectors: [["app-id-c-vt-footer"]], decls: 15, vars: 12, consts: [[1, "title-footer"], [1, "doubts"], [1, "options"], ["href", "#"]], template: function IdCVtFooterComponent_Template(rf, ctx) { if (rf & 1) {
+IdCVtFooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: IdCVtFooterComponent, selectors: [["app-id-c-vt-footer"]], decls: 4, vars: 0, consts: [[1, "title-footer"], [1, "copyright"]], template: function IdCVtFooterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "footer");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](4, "translate");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](8, "translate");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](11, "translate");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](14, "translate");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Soyyo. Copyright Servicios de Identidad Digital S.A.S. 2020 \u2013 Todos los derechos reservados. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](4, 4, "validate-token.footer.title"));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](8, 6, "validate-token.footer.options.FAQ"));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](11, 8, "validate-token.footer.options.contact"));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](14, 10, "validate-token.footer.options.report"));
-    } }, pipes: [_ngx_translate_core__WEBPACK_IMPORTED_MODULE_1__["TranslatePipe"]], encapsulation: 2 });
+    } }, encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](IdCVtFooterComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -515,21 +489,21 @@ const routes = [
         children: [
             {
                 path: '',
-                redirectTo: _configs_routing_path__WEBPACK_IMPORTED_MODULE_1__["RoutingPath"].appRouting.transaction.pages.error.path,
+                redirectTo: _configs_routing_path__WEBPACK_IMPORTED_MODULE_1__["RoutingPath"].appRouting.validateToken.pages.error.path,
                 pathMatch: 'full'
             },
             {
-                path: _configs_routing_path__WEBPACK_IMPORTED_MODULE_1__["RoutingPath"].appRouting.transaction.pages.validate.path,
+                path: _configs_routing_path__WEBPACK_IMPORTED_MODULE_1__["RoutingPath"].appRouting.validateToken.pages.validate.path,
                 component: _pages_pages_index__WEBPACK_IMPORTED_MODULE_4__["ValidateComponent"],
                 data: {
-                    breadcrumb: _configs_routing_path__WEBPACK_IMPORTED_MODULE_1__["RoutingPath"].appRouting.transaction.pages.validate.breadcrumb
+                    breadcrumb: _configs_routing_path__WEBPACK_IMPORTED_MODULE_1__["RoutingPath"].appRouting.validateToken.pages.validate.breadcrumb
                 }
             },
             {
-                path: _configs_routing_path__WEBPACK_IMPORTED_MODULE_1__["RoutingPath"].appRouting.transaction.pages.error.path,
+                path: _configs_routing_path__WEBPACK_IMPORTED_MODULE_1__["RoutingPath"].appRouting.validateToken.pages.error.path,
                 component: _pages_pages_index__WEBPACK_IMPORTED_MODULE_4__["ErrorComponent"],
                 data: {
-                    breadcrumb: _configs_routing_path__WEBPACK_IMPORTED_MODULE_1__["RoutingPath"].appRouting.transaction.pages.error.breadcrumb
+                    breadcrumb: _configs_routing_path__WEBPACK_IMPORTED_MODULE_1__["RoutingPath"].appRouting.validateToken.pages.error.breadcrumb
                 }
             }
         ]

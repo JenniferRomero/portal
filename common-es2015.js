@@ -13,11 +13,11 @@ __webpack_require__.r(__webpack_exports__);
 class RoutingPath {
 }
 RoutingPath.appRouting = {
-    transaction: {
+    validateToken: {
         pages: {
             validate: {
                 path: ':idProcess/:identificationNumber/:token',
-                breadcrumb: 'Inicio de sesión'
+                breadcrumb: 'Validación Token'
             },
             error: {
                 path: 'error',
@@ -27,8 +27,8 @@ RoutingPath.appRouting = {
     },
     pages: {
         modules: {
-            dashboard: {
-                path: 'dashboard',
+            transactions: {
+                path: 'transactions/:idTx/:entityId/:userStatus',
                 breadcrumb: 'Inicio',
                 submodules: {}
             },
