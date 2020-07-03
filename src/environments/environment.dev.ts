@@ -3,7 +3,8 @@ export const environment = {
 	endpoints: {
 		accessToken: "https://soyyodev.auth.us-east-1.amazoncognito.com/oauth2/token",
 		validateToken: "https://m0feaaiiu7.execute-api.us-east-1.amazonaws.com/dev/api/v1/token",
-		generateQR: "https://jsonplaceholder.typicode.com/posts/1"
+		generateQR: "https://jsonplaceholder.typicode.com/posts/1",
+		validateEntity: "https://reqres.in/api/user"
 	},
 	keys: {
 		username: "i9k7m3o570i15p3v4a678s79e",
@@ -11,6 +12,6 @@ export const environment = {
 		apiKey: "bYEHYDL5dU1HrkKjlgkzN5SJVwJmFSHP9kdBAl2B"
 	},
 	time: {
-        timeSession: 300,
+        timeSession: 300
 	}
 }

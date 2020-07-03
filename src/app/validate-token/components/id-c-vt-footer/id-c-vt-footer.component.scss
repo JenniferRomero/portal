@@ -29,11 +29,18 @@ footer {
         .doubts {
             @include font($fnb, bold, 14px);
         }
+        .copyright {
+            color: rgba(0,0,0,0.85);
+            @include font($fnl, normal, 14px);
+            letter-spacing: 0;
+            line-height: 22px;
+            text-align: center;
+        }
         .options a {
             color: #5A33FF;
             margin-right: 3%;
             text-decoration: underline;
-            @include font($fnr, normal, 14px);
+            @include font($fnl, normal, 13px);
         }
     }
 }
@@ -63,6 +70,10 @@ footer:before {
 
             .doubts {
                 margin-bottom: 6%;
+            }
+
+            .copyright {
+                margin: 18% 10%;
             }
 
             .options a {
@@ -101,6 +112,9 @@ footer:before {
             position: relative;
             margin-top: 0;
 
+            .copyright {
+                margin: 5% 10% 0% 10%;
+            }
             .options a {
                 display: initial;
             }

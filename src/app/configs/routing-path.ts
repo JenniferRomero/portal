@@ -1,10 +1,10 @@
 export class RoutingPath {
     public static appRouting = {
-        transaction: {
+        validateToken: {
             pages: {
                 validate: {
                     path: ':idProcess/:identificationNumber/:token',
-                    breadcrumb: 'Inicio de sesión'
+                    breadcrumb: 'Validación Token'
                 },
                 error: {
                     path: 'error',
@@ -14,8 +14,8 @@ export class RoutingPath {
         },
         pages: {
             modules: {
-                dashboard: {
-                    path: 'dashboard',
+                transactions: {
+                    path: 'transactions/:idTx/:entityId/:userStatus',
                     breadcrumb: 'Inicio',
                     submodules: {
                         
