@@ -1728,6 +1728,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(EntityService, [{
         key: "getEntity",
         value: function getEntity(idNumber) {
+          //return this.http.get('https://reqres.in/api/user');
           return this.http.get(src_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"]['endpoints']['validateEntity']); //return this.http.get(ENV['endpoints']['validateEntity'] + '/entities/' + idNumber);
         }
       }]);
@@ -3000,23 +3001,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     __webpack_require__.d(__webpack_exports__, "environment", function () {
       return environment;
-    }); // This file can be replaced during build by using the `fileReplacements` array.
-    // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-    // The list of file replacements can be found in `angular.json`.
-
+    });
 
     var environment = {
-      production: false
+      production: false,
+      endpoints: {
+        accessToken: "https://soyyodev.auth.us-east-1.amazoncognito.com/oauth2/token",
+        validateToken: "https://m0feaaiiu7.execute-api.us-east-1.amazonaws.com/dev/api/v1/token",
+        generateQR: "https://jsonplaceholder.typicode.com/posts/1",
+        validateEntity: "https://reqres.in/api/user"
+      },
+      keys: {
+        username: "i9k7m3o570i15p3v4a678s79e",
+        password: "ftovorpv8k4knllnlbjchqq2rau2gif7qhdtagqjdu0k033rcl2",
+        apiKey: "bYEHYDL5dU1HrkKjlgkzN5SJVwJmFSHP9kdBAl2B"
+      },
+      time: {
+        timeSession: 300
+      }
     };
-    /*
-     * For easier debugging in development mode, you can import the following file
-     * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
-     *
-     * This import should be commented out in production mode because it will have a negative impact
-     * on performance if an error is thrown.
-     */
-    // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
-
     /***/
   },
 
